@@ -1,0 +1,210 @@
+match_category,station_name_normalized
+matched,ADMIRALTY
+matched,ALJUNIED
+matched,ANG MO KIO
+matched,BARTLEY
+matched,BAYFRONT
+matched,BEAUTY WORLD
+matched,BEDOK
+matched,BEDOK NORTH
+matched,BEDOK RESERVOIR
+matched,BENCOOLEN
+matched,BENDEMEER
+matched,BISHAN
+matched,BOON KENG
+matched,BOON LAY
+matched,BOTANIC GARDENS
+matched,BRADDELL
+matched,BRAS BASAH
+matched,BUANGKOK
+matched,BUGIS
+matched,BUKIT BATOK
+matched,BUKIT GOMBAK
+matched,BUKIT PANJANG
+matched,BUONA VISTA
+matched,CALDECOTT
+matched,CASHEW
+matched,CHANGI AIRPORT
+matched,CHINATOWN
+matched,CHINESE GARDEN
+matched,CHOA CHU KANG
+matched,CITY HALL
+matched,CLARKE QUAY
+matched,CLEMENTI
+matched,COMMONWEALTH
+matched,DAKOTA
+matched,DHOBY GHAUT
+matched,DOVER
+matched,DOWNTOWN
+matched,ESPLANADE
+matched,EUNOS
+matched,EXPO
+matched,FARRER PARK
+matched,FARRER ROAD
+matched,FORT CANNING
+matched,GEYLANG BAHRU
+matched,GUL CIRCLE
+matched,HARBOURFRONT
+matched,HAW PAR VILLA
+matched,HILLVIEW
+matched,HOLLAND VILLAGE
+matched,HOUGANG
+matched,JALAN BESAR
+matched,JOO KOON
+matched,JURONG EAST
+matched,KAKI BUKIT
+matched,KALLANG
+matched,KEMBANGAN
+matched,KENT RIDGE
+matched,KHATIB
+matched,KING ALBERT PARK
+matched,KOVAN
+matched,KRANJI
+matched,LABRADOR PARK
+matched,LAKESIDE
+matched,LAVENDER
+matched,LITTLE INDIA
+matched,LORONG CHUAN
+matched,MACPHERSON
+matched,MARINA BAY
+matched,MARINA SOUTH PIER
+matched,MARSILING
+matched,MARYMOUNT
+matched,MATTAR
+matched,MOUNTBATTEN
+matched,NEWTON
+matched,NICOLL HIGHWAY
+matched,NOVENA
+matched,ONE-NORTH
+matched,ORCHARD
+matched,OUTRAM PARK
+matched,PASIR PANJANG
+matched,PASIR RIS
+matched,PAYA LEBAR
+matched,PIONEER
+matched,POTONG PASIR
+matched,PROMENADE
+matched,PUNGGOL
+matched,QUEENSTOWN
+matched,RAFFLES PLACE
+matched,REDHILL
+matched,ROCHOR
+matched,SEMBAWANG
+matched,SENGKANG
+matched,SERANGOON
+matched,SIMEI
+matched,SIXTH AVENUE
+matched,SOMERSET
+matched,STADIUM
+matched,STEVENS
+matched,TAI SENG
+matched,TAMPINES
+matched,TAMPINES EAST
+matched,TAMPINES WEST
+matched,TAN KAH KEE
+matched,TANAH MERAH
+matched,TANJONG PAGAR
+matched,TELOK AYER
+matched,TELOK BLANGAH
+matched,TIONG BAHRU
+matched,TOA PAYOH
+matched,TUAS CRESCENT
+matched,TUAS LINK
+matched,TUAS WEST ROAD
+matched,UBI
+matched,UPPER CHANGI
+matched,WOODLANDS
+matched,WOODLEIGH
+matched,YEW TEE
+matched,YIO CHU KANG
+matched,YISHUN
+primary_only,BAKAU
+primary_only,BANGKIT
+primary_only,CHENG LIM
+primary_only,COMPASSVALE
+primary_only,CORAL EDGE
+primary_only,COVE
+primary_only,DAMAI
+primary_only,FAJAR
+primary_only,FARMWAY
+primary_only,FERNVALE
+primary_only,JELAPANG
+primary_only,KADALOOR
+primary_only,KANGKAR
+primary_only,KEAT HONG
+primary_only,KUPANG
+primary_only,LAYAR
+primary_only,MERIDIAN
+primary_only,NIBONG
+primary_only,OASIS
+primary_only,PENDING
+primary_only,PETIR
+primary_only,PHOENIX
+primary_only,PUNGGOL POINT
+primary_only,RANGGUNG
+primary_only,RENJONG
+primary_only,RIVIERA
+primary_only,RUMBIA
+primary_only,SAM KEE
+primary_only,SAMUDERA
+primary_only,SEGAR
+primary_only,SENJA
+primary_only,SOO TECK
+primary_only,SOUTH VIEW
+primary_only,SUMANG
+primary_only,TECK LEE
+primary_only,TECK WHYE
+primary_only,THANGGAM
+primary_only,TONGKANG
+supplementary_only,BAKAU LRT STATION
+supplementary_only,BANGKIT LRT STATION
+supplementary_only,BRIGHT HILL
+supplementary_only,BUKIT BROWN
+supplementary_only,BUKIT PANJANG LRT STATION
+supplementary_only,CANBERRA
+supplementary_only,CHENG LIM LRT STATION
+supplementary_only,CHOA CHU KANG LRT STATION
+supplementary_only,COMPASSVALE LRT STATION
+supplementary_only,CORAL EDGE LRT STATION
+supplementary_only,COVE LRT STATION
+supplementary_only,DAMAI LRT STATION
+supplementary_only,FAJAR LRT STATION
+supplementary_only,FARMWAY LRT STATION
+supplementary_only,FERNVALE LRT STATION
+supplementary_only,HUME
+supplementary_only,JELAPANG LRT STATION
+supplementary_only,KADALOOR LRT STATION
+supplementary_only,KANGKAR LRT STATION
+supplementary_only,KEAT HONG LRT STATION
+supplementary_only,KUPANG LRT STATION
+supplementary_only,LAYAR LRT STATION
+supplementary_only,LENTOR
+supplementary_only,MAYFLOWER
+supplementary_only,MERIDIAN LRT STATION
+supplementary_only,NIBONG LRT STATION
+supplementary_only,OASIS LRT STATION
+supplementary_only,PENDING LRT STATION
+supplementary_only,PETIR LRT STATION
+supplementary_only,PHOENIX LRT STATION
+supplementary_only,PUNGGOL LRT STATION
+supplementary_only,PUNGGOL POINT LRT STATION
+supplementary_only,RANGGUNG LRT STATION
+supplementary_only,RENJONG LRT STATION
+supplementary_only,RIVIERA LRT STATION
+supplementary_only,RUMBIA LRT STATION
+supplementary_only,SAM KEE LRT STATION
+supplementary_only,SAMUDERA LRT STATION
+supplementary_only,SEGAR LRT STATION
+supplementary_only,SENGKANG LRT STATION
+supplementary_only,SENJA LRT STATION
+supplementary_only,SOO TECK LRT STATION
+supplementary_only,SOUTH VIEW LRT STATION
+supplementary_only,SPRINGLEAF
+supplementary_only,SUMANG LRT STATION
+supplementary_only,TECK LEE LRT STATION
+supplementary_only,TECK WHYE LRT STATION
+supplementary_only,THANGGAM LRT STATION
+supplementary_only,TONGKANG LRT STATION
+supplementary_only,UPPER THOMSON
+supplementary_only,WOODLANDS NORTH
+supplementary_only,WOODLANDS SOUTH

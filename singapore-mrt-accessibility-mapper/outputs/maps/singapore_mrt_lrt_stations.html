@@ -1,0 +1,3725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18126d33ec76d6ca03d59c1b4caab02e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_18126d33ec76d6ca03d59c1b4caab02e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18126d33ec76d6ca03d59c1b4caab02e = L.map(
+                "map_18126d33ec76d6ca03d59c1b4caab02e",
+                {
+                    center: [1.345079840764331, 103.84136159872611],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_18126d33ec76d6ca03d59c1b4caab02e);
+
+            
+
+        
+    
+            var tile_layer_abaaf4072ddf3d60a9946dcc20c1fe5b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_abaaf4072ddf3d60a9946dcc20c1fe5b.addTo(map_18126d33ec76d6ca03d59c1b4caab02e);
+        
+    
+            var marker_cluster_5b1221c5393be71048d761bca6991032 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_48d5125479373f32da91c2024020865a = L.circleMarker(
+                [1.333207, 103.742308],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f87255d59eef6bd8708b5d5c81ea9d19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b09fd06648d0118cb093c0b3b040da8e = $(`<div id="html_b09fd06648d0118cb093c0b3b040da8e" style="width: 100.0%; height: 100.0%;">Jurong East<br>Type: MRT<br>Nearest station: Chinese Garden<br>Nearest distance: 1.491 km</div>`)[0];
+                popup_f87255d59eef6bd8708b5d5c81ea9d19.setContent(html_b09fd06648d0118cb093c0b3b040da8e);
+            
+        
+
+        circle_marker_48d5125479373f32da91c2024020865a.bindPopup(popup_f87255d59eef6bd8708b5d5c81ea9d19)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee46a83a9b5ea96841000bd6fefc783 = L.circleMarker(
+                [1.349069, 103.749596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_dd0bd30f8717cb13643c1e9588e3abf7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_084bdbed4e54bdea7fe767e03abe00d1 = $(`<div id="html_084bdbed4e54bdea7fe767e03abe00d1" style="width: 100.0%; height: 100.0%;">Bukit Batok<br>Type: MRT<br>Nearest station: Bukit Gombak<br>Nearest distance: 1.137 km</div>`)[0];
+                popup_dd0bd30f8717cb13643c1e9588e3abf7.setContent(html_084bdbed4e54bdea7fe767e03abe00d1);
+            
+        
+
+        circle_marker_4ee46a83a9b5ea96841000bd6fefc783.bindPopup(popup_dd0bd30f8717cb13643c1e9588e3abf7)
+        ;
+
+        
+    
+    
+            var circle_marker_a33d5c9aedeb08485ed4252c8ab6529c = L.circleMarker(
+                [1.359043, 103.751863],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_3b5087684384354625cd46d180d3557d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cefcc12131ae6507d9b66ad08ad61f0 = $(`<div id="html_5cefcc12131ae6507d9b66ad08ad61f0" style="width: 100.0%; height: 100.0%;">Bukit Gombak<br>Type: MRT<br>Nearest station: Bukit Batok<br>Nearest distance: 1.137 km</div>`)[0];
+                popup_3b5087684384354625cd46d180d3557d.setContent(html_5cefcc12131ae6507d9b66ad08ad61f0);
+            
+        
+
+        circle_marker_a33d5c9aedeb08485ed4252c8ab6529c.bindPopup(popup_3b5087684384354625cd46d180d3557d)
+        ;
+
+        
+    
+    
+            var circle_marker_ca64c6d40d35c0af67ff7433895c6192 = L.circleMarker(
+                [1.385417, 103.744316],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_8b267db79d8873f4d905601580c2ff85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6c7ce96d9ed034e75ac728e3868eefe = $(`<div id="html_d6c7ce96d9ed034e75ac728e3868eefe" style="width: 100.0%; height: 100.0%;">Choa Chu Kang<br>Type: MRT<br>Nearest station: South View<br>Nearest distance: 0.579 km</div>`)[0];
+                popup_8b267db79d8873f4d905601580c2ff85.setContent(html_d6c7ce96d9ed034e75ac728e3868eefe);
+            
+        
+
+        circle_marker_ca64c6d40d35c0af67ff7433895c6192.bindPopup(popup_8b267db79d8873f4d905601580c2ff85)
+        ;
+
+        
+    
+    
+            var circle_marker_bbb3c266a44d7c9f9d25212e798cbaf9 = L.circleMarker(
+                [1.397383, 103.747523],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_2f00f12df60130606bcd34d09c18ddd3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f086ae83791374ff8397d905ab05f7eb = $(`<div id="html_f086ae83791374ff8397d905ab05f7eb" style="width: 100.0%; height: 100.0%;">Yew Tee<br>Type: MRT<br>Nearest station: Choa Chu Kang<br>Nearest distance: 1.377 km</div>`)[0];
+                popup_2f00f12df60130606bcd34d09c18ddd3.setContent(html_f086ae83791374ff8397d905ab05f7eb);
+            
+        
+
+        circle_marker_bbb3c266a44d7c9f9d25212e798cbaf9.bindPopup(popup_2f00f12df60130606bcd34d09c18ddd3)
+        ;
+
+        
+    
+    
+            var circle_marker_3ba7e31a3566a7409f3d8f28b690a612 = L.circleMarker(
+                [1.425302, 103.762049],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_3725d7b20ffdf7d0cf3fa8b88c301f3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_971419ec93ca23552d1f2f8edb8479ce = $(`<div id="html_971419ec93ca23552d1f2f8edb8479ce" style="width: 100.0%; height: 100.0%;">Kranji<br>Type: MRT<br>Nearest station: Marsiling<br>Nearest distance: 1.570 km</div>`)[0];
+                popup_3725d7b20ffdf7d0cf3fa8b88c301f3a.setContent(html_971419ec93ca23552d1f2f8edb8479ce);
+            
+        
+
+        circle_marker_3ba7e31a3566a7409f3d8f28b690a612.bindPopup(popup_3725d7b20ffdf7d0cf3fa8b88c301f3a)
+        ;
+
+        
+    
+    
+            var circle_marker_346f0139237798bf48a3909a89bec5fc = L.circleMarker(
+                [1.432579, 103.77415],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_5b7884fe5769fccb0797ed4d15dd9a9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ac164787686b52210e97176767d28bf = $(`<div id="html_7ac164787686b52210e97176767d28bf" style="width: 100.0%; height: 100.0%;">Marsiling<br>Type: MRT<br>Nearest station: Woodlands<br>Nearest distance: 1.448 km</div>`)[0];
+                popup_5b7884fe5769fccb0797ed4d15dd9a9e.setContent(html_7ac164787686b52210e97176767d28bf);
+            
+        
+
+        circle_marker_346f0139237798bf48a3909a89bec5fc.bindPopup(popup_5b7884fe5769fccb0797ed4d15dd9a9e)
+        ;
+
+        
+    
+    
+            var circle_marker_e3367a638e33d24a05dc9e60ef453afe = L.circleMarker(
+                [1.436984, 103.786406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7a5c7f9203d388b8bdf06f0cbff6369f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ff2fa0cab664118565382a0c288081a = $(`<div id="html_7ff2fa0cab664118565382a0c288081a" style="width: 100.0%; height: 100.0%;">Woodlands<br>Type: MRT<br>Nearest station: Admiralty<br>Nearest distance: 0.000 km</div>`)[0];
+                popup_7a5c7f9203d388b8bdf06f0cbff6369f.setContent(html_7ff2fa0cab664118565382a0c288081a);
+            
+        
+
+        circle_marker_e3367a638e33d24a05dc9e60ef453afe.bindPopup(popup_7a5c7f9203d388b8bdf06f0cbff6369f)
+        ;
+
+        
+    
+    
+            var circle_marker_4171738347e6850f72d1fb72dac9240a = L.circleMarker(
+                [1.436984, 103.786406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_bfcf9a5daddd9fcc449903baacf5edd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e25bfbcc066db2843ef01f2cf492a1f4 = $(`<div id="html_e25bfbcc066db2843ef01f2cf492a1f4" style="width: 100.0%; height: 100.0%;">Admiralty<br>Type: MRT<br>Nearest station: Woodlands<br>Nearest distance: 0.000 km</div>`)[0];
+                popup_bfcf9a5daddd9fcc449903baacf5edd8.setContent(html_e25bfbcc066db2843ef01f2cf492a1f4);
+            
+        
+
+        circle_marker_4171738347e6850f72d1fb72dac9240a.bindPopup(popup_bfcf9a5daddd9fcc449903baacf5edd8)
+        ;
+
+        
+    
+    
+            var circle_marker_ef1ecd04e50152d2f8a6f4ee742532fe = L.circleMarker(
+                [1.449133, 103.82006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_60c359476cd42f7e3628689a66f5e0ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4ea668dc5be4444a5361e73755f183a = $(`<div id="html_a4ea668dc5be4444a5361e73755f183a" style="width: 100.0%; height: 100.0%;">Sembawang<br>Type: MRT<br>Nearest station: Yishun<br>Nearest distance: 2.731 km</div>`)[0];
+                popup_60c359476cd42f7e3628689a66f5e0ad.setContent(html_a4ea668dc5be4444a5361e73755f183a);
+            
+        
+
+        circle_marker_ef1ecd04e50152d2f8a6f4ee742532fe.bindPopup(popup_60c359476cd42f7e3628689a66f5e0ad)
+        ;
+
+        
+    
+    
+            var circle_marker_61d342ff452ea9cb5a93b82977f2ef0f = L.circleMarker(
+                [1.429666, 103.835044],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_440752d9dc680c47c788588109295e6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2af63d827df0fdd6dece9a84559c8b36 = $(`<div id="html_2af63d827df0fdd6dece9a84559c8b36" style="width: 100.0%; height: 100.0%;">Yishun<br>Type: MRT<br>Nearest station: Khatib<br>Nearest distance: 1.380 km</div>`)[0];
+                popup_440752d9dc680c47c788588109295e6c.setContent(html_2af63d827df0fdd6dece9a84559c8b36);
+            
+        
+
+        circle_marker_61d342ff452ea9cb5a93b82977f2ef0f.bindPopup(popup_440752d9dc680c47c788588109295e6c)
+        ;
+
+        
+    
+    
+            var circle_marker_aa39a71ae4eb9cb0eac0b47621fc1812 = L.circleMarker(
+                [1.417423, 103.832995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_984d761305dc6a7312bebe5e07c7203d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ae0f818c1a3c89d1c77cd36a565cdcb = $(`<div id="html_1ae0f818c1a3c89d1c77cd36a565cdcb" style="width: 100.0%; height: 100.0%;">Khatib<br>Type: MRT<br>Nearest station: Yishun<br>Nearest distance: 1.380 km</div>`)[0];
+                popup_984d761305dc6a7312bebe5e07c7203d.setContent(html_1ae0f818c1a3c89d1c77cd36a565cdcb);
+            
+        
+
+        circle_marker_aa39a71ae4eb9cb0eac0b47621fc1812.bindPopup(popup_984d761305dc6a7312bebe5e07c7203d)
+        ;
+
+        
+    
+    
+            var circle_marker_4deabe7348279f19fc309fff3e2511d7 = L.circleMarker(
+                [1.381765, 103.844923],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7c7417b199daab3f9565a1b755a0a27f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f7c2f120176ad0872b450e8ed9f83ea = $(`<div id="html_0f7c2f120176ad0872b450e8ed9f83ea" style="width: 100.0%; height: 100.0%;">Yio Chu Kang<br>Type: MRT<br>Nearest station: Ang Mo Kio<br>Nearest distance: 1.405 km</div>`)[0];
+                popup_7c7417b199daab3f9565a1b755a0a27f.setContent(html_0f7c2f120176ad0872b450e8ed9f83ea);
+            
+        
+
+        circle_marker_4deabe7348279f19fc309fff3e2511d7.bindPopup(popup_7c7417b199daab3f9565a1b755a0a27f)
+        ;
+
+        
+    
+    
+            var circle_marker_56c7ddca7e9fe4ce5893fe272462ad6d = L.circleMarker(
+                [1.370025, 103.849588],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_799ad1abe7085371065053c5cb6f18f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8dc47371c6c7320fb09e8bc592f3108f = $(`<div id="html_8dc47371c6c7320fb09e8bc592f3108f" style="width: 100.0%; height: 100.0%;">Ang Mo Kio<br>Type: MRT<br>Nearest station: Yio Chu Kang<br>Nearest distance: 1.405 km</div>`)[0];
+                popup_799ad1abe7085371065053c5cb6f18f3.setContent(html_8dc47371c6c7320fb09e8bc592f3108f);
+            
+        
+
+        circle_marker_56c7ddca7e9fe4ce5893fe272462ad6d.bindPopup(popup_799ad1abe7085371065053c5cb6f18f3)
+        ;
+
+        
+    
+    
+            var circle_marker_b860364affd615df872f6197f6baa0cd = L.circleMarker(
+                [1.35092, 103.848206],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_b8d335f7155d47d2bd616dc09d41fc7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a65d65dba466f399576637ee749845f = $(`<div id="html_1a65d65dba466f399576637ee749845f" style="width: 100.0%; height: 100.0%;">Bishan<br>Type: MRT<br>Nearest station: Marymount<br>Nearest distance: 1.031 km</div>`)[0];
+                popup_b8d335f7155d47d2bd616dc09d41fc7a.setContent(html_1a65d65dba466f399576637ee749845f);
+            
+        
+
+        circle_marker_b860364affd615df872f6197f6baa0cd.bindPopup(popup_b8d335f7155d47d2bd616dc09d41fc7a)
+        ;
+
+        
+    
+    
+            var circle_marker_2a28b922106aafa318de5c10207cf4a5 = L.circleMarker(
+                [1.34055, 103.847098],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_57a8b062f5881e8f173f0836a6d934fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f67e2aee99ae45950c270c00ccb0d61 = $(`<div id="html_3f67e2aee99ae45950c270c00ccb0d61" style="width: 100.0%; height: 100.0%;">Braddell<br>Type: MRT<br>Nearest station: Caldecott<br>Nearest distance: 0.891 km</div>`)[0];
+                popup_57a8b062f5881e8f173f0836a6d934fa.setContent(html_3f67e2aee99ae45950c270c00ccb0d61);
+            
+        
+
+        circle_marker_2a28b922106aafa318de5c10207cf4a5.bindPopup(popup_57a8b062f5881e8f173f0836a6d934fa)
+        ;
+
+        
+    
+    
+            var circle_marker_f7ddbc66f8e8fd39f115756a0f44c735 = L.circleMarker(
+                [1.332405, 103.847436],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_27a05a83a220accdedcf1819bf2595a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbed75456de4e79d77452cf631725b26 = $(`<div id="html_cbed75456de4e79d77452cf631725b26" style="width: 100.0%; height: 100.0%;">Toa Payoh<br>Type: MRT<br>Nearest station: Braddell<br>Nearest distance: 0.906 km</div>`)[0];
+                popup_27a05a83a220accdedcf1819bf2595a1.setContent(html_cbed75456de4e79d77452cf631725b26);
+            
+        
+
+        circle_marker_f7ddbc66f8e8fd39f115756a0f44c735.bindPopup(popup_27a05a83a220accdedcf1819bf2595a1)
+        ;
+
+        
+    
+    
+            var circle_marker_bc1ec1d834fc3339967b3cb2059a26ef = L.circleMarker(
+                [1.320089, 103.843405],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7cb04914ea4e69b6db37201338b42644 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_112915c927a6a33507b88a4e70c06438 = $(`<div id="html_112915c927a6a33507b88a4e70c06438" style="width: 100.0%; height: 100.0%;">Novena<br>Type: MRT<br>Nearest station: Newton<br>Nearest distance: 0.918 km</div>`)[0];
+                popup_7cb04914ea4e69b6db37201338b42644.setContent(html_112915c927a6a33507b88a4e70c06438);
+            
+        
+
+        circle_marker_bc1ec1d834fc3339967b3cb2059a26ef.bindPopup(popup_7cb04914ea4e69b6db37201338b42644)
+        ;
+
+        
+    
+    
+            var circle_marker_4af181a81d17ce4dfcf1a5549500d3a3 = L.circleMarker(
+                [1.31383, 103.838021],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_4beccd1231b248d4945a3a108fc5385d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f01cf7d6edf5eeeb7690ec507e4337f = $(`<div id="html_8f01cf7d6edf5eeeb7690ec507e4337f" style="width: 100.0%; height: 100.0%;">Newton<br>Type: MRT<br>Nearest station: Novena<br>Nearest distance: 0.918 km</div>`)[0];
+                popup_4beccd1231b248d4945a3a108fc5385d.setContent(html_8f01cf7d6edf5eeeb7690ec507e4337f);
+            
+        
+
+        circle_marker_4af181a81d17ce4dfcf1a5549500d3a3.bindPopup(popup_4beccd1231b248d4945a3a108fc5385d)
+        ;
+
+        
+    
+    
+            var circle_marker_0184bd3a2cf355c85ca26c43e62c3518 = L.circleMarker(
+                [1.304041, 103.831792],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_9f7272f2f26581b6ea971cfa4aade63a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df34bb798e061b45d59526fcce303a68 = $(`<div id="html_df34bb798e061b45d59526fcce303a68" style="width: 100.0%; height: 100.0%;">Orchard<br>Type: MRT<br>Nearest station: Somerset<br>Nearest distance: 0.836 km</div>`)[0];
+                popup_9f7272f2f26581b6ea971cfa4aade63a.setContent(html_df34bb798e061b45d59526fcce303a68);
+            
+        
+
+        circle_marker_0184bd3a2cf355c85ca26c43e62c3518.bindPopup(popup_9f7272f2f26581b6ea971cfa4aade63a)
+        ;
+
+        
+    
+    
+            var circle_marker_3d6c0fcec6a749e6be2fd8436640b079 = L.circleMarker(
+                [1.300508, 103.838428],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f4a24565869ab70e1aab4530f7d10b1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd6e03b1a7ff7131a2b09e134b2bf3ed = $(`<div id="html_cd6e03b1a7ff7131a2b09e134b2bf3ed" style="width: 100.0%; height: 100.0%;">Somerset<br>Type: MRT<br>Nearest station: Dhoby Ghaut<br>Nearest distance: 0.833 km</div>`)[0];
+                popup_f4a24565869ab70e1aab4530f7d10b1e.setContent(html_cd6e03b1a7ff7131a2b09e134b2bf3ed);
+            
+        
+
+        circle_marker_3d6c0fcec6a749e6be2fd8436640b079.bindPopup(popup_f4a24565869ab70e1aab4530f7d10b1e)
+        ;
+
+        
+    
+    
+            var circle_marker_ec634087075420f80a748a0b4dee41d7 = L.circleMarker(
+                [1.299169, 103.845799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_b843d80d8c160d671b64a3afe2781dc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72c21de5cbf299f29f7f9f6b97b3ed8e = $(`<div id="html_72c21de5cbf299f29f7f9f6b97b3ed8e" style="width: 100.0%; height: 100.0%;">Dhoby Ghaut<br>Type: MRT<br>Nearest station: Bencoolen<br>Nearest distance: 0.472 km</div>`)[0];
+                popup_b843d80d8c160d671b64a3afe2781dc9.setContent(html_72c21de5cbf299f29f7f9f6b97b3ed8e);
+            
+        
+
+        circle_marker_ec634087075420f80a748a0b4dee41d7.bindPopup(popup_b843d80d8c160d671b64a3afe2781dc9)
+        ;
+
+        
+    
+    
+            var circle_marker_bff8215cf0ff6aa6c7b526f9eb2e3f59 = L.circleMarker(
+                [1.293119, 103.852089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_619744c835edfa79885e5cf4f6279045 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0d93129a2fa9ad80c6699632d4178ce = $(`<div id="html_f0d93129a2fa9ad80c6699632d4178ce" style="width: 100.0%; height: 100.0%;">City Hall<br>Type: MRT<br>Nearest station: Esplanade<br>Nearest distance: 0.380 km</div>`)[0];
+                popup_619744c835edfa79885e5cf4f6279045.setContent(html_f0d93129a2fa9ad80c6699632d4178ce);
+            
+        
+
+        circle_marker_bff8215cf0ff6aa6c7b526f9eb2e3f59.bindPopup(popup_619744c835edfa79885e5cf4f6279045)
+        ;
+
+        
+    
+    
+            var circle_marker_e225ac4ea59236af60866a64c11088f2 = L.circleMarker(
+                [1.284001, 103.85155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_a7c2cf3af11e9a6112fd385d0a86d473 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a419f77da3bc13c1ee0efcda9b91536f = $(`<div id="html_a419f77da3bc13c1ee0efcda9b91536f" style="width: 100.0%; height: 100.0%;">Raffles Place<br>Type: MRT<br>Nearest station: Telok Ayer<br>Nearest distance: 0.381 km</div>`)[0];
+                popup_a7c2cf3af11e9a6112fd385d0a86d473.setContent(html_a419f77da3bc13c1ee0efcda9b91536f);
+            
+        
+
+        circle_marker_e225ac4ea59236af60866a64c11088f2.bindPopup(popup_a7c2cf3af11e9a6112fd385d0a86d473)
+        ;
+
+        
+    
+    
+            var circle_marker_0463acdfd7ab4cf7a9f8dcbb6436b18b = L.circleMarker(
+                [1.276481, 103.854598],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f40c6f8fb3617038326fadf687aa2b54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_836d6952aa8fdf2f41e381bb44462d7d = $(`<div id="html_836d6952aa8fdf2f41e381bb44462d7d" style="width: 100.0%; height: 100.0%;">Marina Bay<br>Type: MRT<br>Nearest station: Downtown<br>Nearest distance: 0.390 km</div>`)[0];
+                popup_f40c6f8fb3617038326fadf687aa2b54.setContent(html_836d6952aa8fdf2f41e381bb44462d7d);
+            
+        
+
+        circle_marker_0463acdfd7ab4cf7a9f8dcbb6436b18b.bindPopup(popup_f40c6f8fb3617038326fadf687aa2b54)
+        ;
+
+        
+    
+    
+            var circle_marker_23f98a8274bdd5beaa45de75973b32cb = L.circleMarker(
+                [1.271422, 103.863581],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_4fd80f73f8d5286e0578bc27960e0f5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea2e0345bd52deeec273241fecc7a99d = $(`<div id="html_ea2e0345bd52deeec273241fecc7a99d" style="width: 100.0%; height: 100.0%;">Marina South Pier<br>Type: MRT<br>Nearest station: Marina Bay<br>Nearest distance: 1.146 km</div>`)[0];
+                popup_4fd80f73f8d5286e0578bc27960e0f5f.setContent(html_ea2e0345bd52deeec273241fecc7a99d);
+            
+        
+
+        circle_marker_23f98a8274bdd5beaa45de75973b32cb.bindPopup(popup_4fd80f73f8d5286e0578bc27960e0f5f)
+        ;
+
+        
+    
+    
+            var circle_marker_894d88ce1dba8e514d7ab9213b7d4b1b = L.circleMarker(
+                [1.340371, 103.636866],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_092951d1b794aff7113fae61264ad212 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa784a2969ef26a113f5e9aab9530fec = $(`<div id="html_aa784a2969ef26a113f5e9aab9530fec" style="width: 100.0%; height: 100.0%;">Tuas Link<br>Type: MRT<br>Nearest station: Tuas West Road<br>Nearest distance: 1.186 km</div>`)[0];
+                popup_092951d1b794aff7113fae61264ad212.setContent(html_aa784a2969ef26a113f5e9aab9530fec);
+            
+        
+
+        circle_marker_894d88ce1dba8e514d7ab9213b7d4b1b.bindPopup(popup_092951d1b794aff7113fae61264ad212)
+        ;
+
+        
+    
+    
+            var circle_marker_9cb9332ca05fd57a63f5d837efcbc4ab = L.circleMarker(
+                [1.330075, 103.639636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_28d4d0982e45e4cedd2428e9214f95ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_543f38c6c75fbd43e7c9802dd82bf0ea = $(`<div id="html_543f38c6c75fbd43e7c9802dd82bf0ea" style="width: 100.0%; height: 100.0%;">Tuas West Road<br>Type: MRT<br>Nearest station: Tuas Link<br>Nearest distance: 1.186 km</div>`)[0];
+                popup_28d4d0982e45e4cedd2428e9214f95ab.setContent(html_543f38c6c75fbd43e7c9802dd82bf0ea);
+            
+        
+
+        circle_marker_9cb9332ca05fd57a63f5d837efcbc4ab.bindPopup(popup_28d4d0982e45e4cedd2428e9214f95ab)
+        ;
+
+        
+    
+    
+            var circle_marker_ded048e003ab961d1a0b444c9e9a9f5e = L.circleMarker(
+                [1.321091, 103.649075],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7292cd4a83f5241968162a9d29a08e49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0ee21d9858f1dbc25a622ea4e1eb8d6 = $(`<div id="html_d0ee21d9858f1dbc25a622ea4e1eb8d6" style="width: 100.0%; height: 100.0%;">Tuas Crescent<br>Type: MRT<br>Nearest station: Gul Circle<br>Nearest distance: 1.315 km</div>`)[0];
+                popup_7292cd4a83f5241968162a9d29a08e49.setContent(html_d0ee21d9858f1dbc25a622ea4e1eb8d6);
+            
+        
+
+        circle_marker_ded048e003ab961d1a0b444c9e9a9f5e.bindPopup(popup_7292cd4a83f5241968162a9d29a08e49)
+        ;
+
+        
+    
+    
+            var circle_marker_7bc7412610d3e262badf533d2a505935 = L.circleMarker(
+                [1.319809, 103.66083],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_ea96684ff6f89124afe8088648a43cc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14af68c19563a291baf6205654de25fb = $(`<div id="html_14af68c19563a291baf6205654de25fb" style="width: 100.0%; height: 100.0%;">Gul Circle<br>Type: MRT<br>Nearest station: Tuas Crescent<br>Nearest distance: 1.315 km</div>`)[0];
+                popup_ea96684ff6f89124afe8088648a43cc0.setContent(html_14af68c19563a291baf6205654de25fb);
+            
+        
+
+        circle_marker_7bc7412610d3e262badf533d2a505935.bindPopup(popup_ea96684ff6f89124afe8088648a43cc0)
+        ;
+
+        
+    
+    
+            var circle_marker_4f847d938725f798760c80aefb80cc61 = L.circleMarker(
+                [1.327826, 103.678318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_bfc6fd7af5caccd2c084c4b1f68a8aed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be0fec7584b728be0d5e2d884e8b002c = $(`<div id="html_be0fec7584b728be0d5e2d884e8b002c" style="width: 100.0%; height: 100.0%;">Joo Koon<br>Type: MRT<br>Nearest station: Gul Circle<br>Nearest distance: 2.139 km</div>`)[0];
+                popup_bfc6fd7af5caccd2c084c4b1f68a8aed.setContent(html_be0fec7584b728be0d5e2d884e8b002c);
+            
+        
+
+        circle_marker_4f847d938725f798760c80aefb80cc61.bindPopup(popup_bfc6fd7af5caccd2c084c4b1f68a8aed)
+        ;
+
+        
+    
+    
+            var circle_marker_47669c6c0aec2fc136f1e8c1135ba892 = L.circleMarker(
+                [1.337645, 103.69742],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_aca6b88a6e90879fa4773bf6e9397929 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e29d27f128133fdbd2d9c6cd2bb94901 = $(`<div id="html_e29d27f128133fdbd2d9c6cd2bb94901" style="width: 100.0%; height: 100.0%;">Pioneer<br>Type: MRT<br>Nearest station: Boon Lay<br>Nearest distance: 0.940 km</div>`)[0];
+                popup_aca6b88a6e90879fa4773bf6e9397929.setContent(html_e29d27f128133fdbd2d9c6cd2bb94901);
+            
+        
+
+        circle_marker_47669c6c0aec2fc136f1e8c1135ba892.bindPopup(popup_aca6b88a6e90879fa4773bf6e9397929)
+        ;
+
+        
+    
+    
+            var circle_marker_2c53b872baadcd1f2499776c37f9adda = L.circleMarker(
+                [1.33862, 103.705817],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_2a7d235d5356d437e934ea4a08cf2570 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0c6013b4eefb871dff4cc01c699bc3f = $(`<div id="html_e0c6013b4eefb871dff4cc01c699bc3f" style="width: 100.0%; height: 100.0%;">Boon Lay<br>Type: MRT<br>Nearest station: Pioneer<br>Nearest distance: 0.940 km</div>`)[0];
+                popup_2a7d235d5356d437e934ea4a08cf2570.setContent(html_e0c6013b4eefb871dff4cc01c699bc3f);
+            
+        
+
+        circle_marker_2c53b872baadcd1f2499776c37f9adda.bindPopup(popup_2a7d235d5356d437e934ea4a08cf2570)
+        ;
+
+        
+    
+    
+            var circle_marker_ba23d417e6722ba910dfb4d8d753f87e = L.circleMarker(
+                [1.344264, 103.720797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d35b18d4a1b34f9cd35c680fb1db8526 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_547d148a4194f49f95770e3698ccfb4b = $(`<div id="html_547d148a4194f49f95770e3698ccfb4b" style="width: 100.0%; height: 100.0%;">Lakeside<br>Type: MRT<br>Nearest station: Chinese Garden<br>Nearest distance: 1.326 km</div>`)[0];
+                popup_d35b18d4a1b34f9cd35c680fb1db8526.setContent(html_547d148a4194f49f95770e3698ccfb4b);
+            
+        
+
+        circle_marker_ba23d417e6722ba910dfb4d8d753f87e.bindPopup(popup_d35b18d4a1b34f9cd35c680fb1db8526)
+        ;
+
+        
+    
+    
+            var circle_marker_c9e7904e6d76e1f71e3e757faf50187b = L.circleMarker(
+                [1.342436, 103.732582],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_341beddab293e8062fbdfe48da0fc5f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99f6c33e8556a6cc76aa1c312f7f19c1 = $(`<div id="html_99f6c33e8556a6cc76aa1c312f7f19c1" style="width: 100.0%; height: 100.0%;">Chinese Garden<br>Type: MRT<br>Nearest station: Lakeside<br>Nearest distance: 1.326 km</div>`)[0];
+                popup_341beddab293e8062fbdfe48da0fc5f5.setContent(html_99f6c33e8556a6cc76aa1c312f7f19c1);
+            
+        
+
+        circle_marker_c9e7904e6d76e1f71e3e757faf50187b.bindPopup(popup_341beddab293e8062fbdfe48da0fc5f5)
+        ;
+
+        
+    
+    
+            var circle_marker_d515a0b3ddfbb47196b762d57d6e23c7 = L.circleMarker(
+                [1.314925, 103.765341],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7188567647a8889385deb81d2b4683de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c338395b50259b8d580a8bbdd8a49881 = $(`<div id="html_c338395b50259b8d580a8bbdd8a49881" style="width: 100.0%; height: 100.0%;">Clementi<br>Type: MRT<br>Nearest station: Dover<br>Nearest distance: 1.524 km</div>`)[0];
+                popup_7188567647a8889385deb81d2b4683de.setContent(html_c338395b50259b8d580a8bbdd8a49881);
+            
+        
+
+        circle_marker_d515a0b3ddfbb47196b762d57d6e23c7.bindPopup(popup_7188567647a8889385deb81d2b4683de)
+        ;
+
+        
+    
+    
+            var circle_marker_3e6ee49c64f6cbbec9b1b3c7aa1dc3ba = L.circleMarker(
+                [1.311414, 103.778596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_5453bbd1d20ddad2ea2949045828ce55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30a5843a4f6e1148d40135f589e8e344 = $(`<div id="html_30a5843a4f6e1148d40135f589e8e344" style="width: 100.0%; height: 100.0%;">Dover<br>Type: MRT<br>Nearest station: Buona Vista<br>Nearest distance: 1.351 km</div>`)[0];
+                popup_5453bbd1d20ddad2ea2949045828ce55.setContent(html_30a5843a4f6e1148d40135f589e8e344);
+            
+        
+
+        circle_marker_3e6ee49c64f6cbbec9b1b3c7aa1dc3ba.bindPopup(popup_5453bbd1d20ddad2ea2949045828ce55)
+        ;
+
+        
+    
+    
+            var circle_marker_f2ccbfc344c14a356eb4afa02c1b630f = L.circleMarker(
+                [1.307337, 103.790046],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_754ebb418649eaa350c640305aed2c7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03ab004c6fc41e2d968fd44e9720ad7a = $(`<div id="html_03ab004c6fc41e2d968fd44e9720ad7a" style="width: 100.0%; height: 100.0%;">Buona Vista<br>Type: MRT<br>Nearest station: Holland Village<br>Nearest distance: 0.800 km</div>`)[0];
+                popup_754ebb418649eaa350c640305aed2c7d.setContent(html_03ab004c6fc41e2d968fd44e9720ad7a);
+            
+        
+
+        circle_marker_f2ccbfc344c14a356eb4afa02c1b630f.bindPopup(popup_754ebb418649eaa350c640305aed2c7d)
+        ;
+
+        
+    
+    
+            var circle_marker_8532e5bebc67ac7e688a0eb6e65d7714 = L.circleMarker(
+                [1.302439, 103.798326],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_cc1077bf6a76e3d1910a94d892b823a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35fdea1a0c81de911a8f65d3ff1db7bd = $(`<div id="html_35fdea1a0c81de911a8f65d3ff1db7bd" style="width: 100.0%; height: 100.0%;">Commonwealth<br>Type: MRT<br>Nearest station: Holland Village<br>Nearest distance: 1.003 km</div>`)[0];
+                popup_cc1077bf6a76e3d1910a94d892b823a6.setContent(html_35fdea1a0c81de911a8f65d3ff1db7bd);
+            
+        
+
+        circle_marker_8532e5bebc67ac7e688a0eb6e65d7714.bindPopup(popup_cc1077bf6a76e3d1910a94d892b823a6)
+        ;
+
+        
+    
+    
+            var circle_marker_98742a3c6b1b1b45c4b2ebc5ab2cf1d6 = L.circleMarker(
+                [1.294867, 103.805902],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_58d4391a206238ccc81a12f104942ba6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cf533a8ecc3c970a7f52fd29ec4c635 = $(`<div id="html_4cf533a8ecc3c970a7f52fd29ec4c635" style="width: 100.0%; height: 100.0%;">Queenstown<br>Type: MRT<br>Nearest station: Commonwealth<br>Nearest distance: 1.191 km</div>`)[0];
+                popup_58d4391a206238ccc81a12f104942ba6.setContent(html_4cf533a8ecc3c970a7f52fd29ec4c635);
+            
+        
+
+        circle_marker_98742a3c6b1b1b45c4b2ebc5ab2cf1d6.bindPopup(popup_58d4391a206238ccc81a12f104942ba6)
+        ;
+
+        
+    
+    
+            var circle_marker_d6d43fa03287b5fce7e698f3a6271705 = L.circleMarker(
+                [1.289674, 103.816787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e8e98962d554bd8903c578892c10f83c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecf3b999e8dc7004e62b4d706675741b = $(`<div id="html_ecf3b999e8dc7004e62b4d706675741b" style="width: 100.0%; height: 100.0%;">Redhill<br>Type: MRT<br>Nearest station: Tiong Bahru<br>Nearest distance: 1.182 km</div>`)[0];
+                popup_e8e98962d554bd8903c578892c10f83c.setContent(html_ecf3b999e8dc7004e62b4d706675741b);
+            
+        
+
+        circle_marker_d6d43fa03287b5fce7e698f3a6271705.bindPopup(popup_e8e98962d554bd8903c578892c10f83c)
+        ;
+
+        
+    
+    
+            var circle_marker_86f8bed3415f16e6f924f64fd67599c9 = L.circleMarker(
+                [1.286555, 103.826956],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_1f228c1cafae1370e513a58c8bf36e42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cdf2f819e6350fd4af60946aea9f5ce = $(`<div id="html_0cdf2f819e6350fd4af60946aea9f5ce" style="width: 100.0%; height: 100.0%;">Tiong Bahru<br>Type: MRT<br>Nearest station: Redhill<br>Nearest distance: 1.182 km</div>`)[0];
+                popup_1f228c1cafae1370e513a58c8bf36e42.setContent(html_0cdf2f819e6350fd4af60946aea9f5ce);
+            
+        
+
+        circle_marker_86f8bed3415f16e6f924f64fd67599c9.bindPopup(popup_1f228c1cafae1370e513a58c8bf36e42)
+        ;
+
+        
+    
+    
+            var circle_marker_df53b4a3a9197fe1af0974b7c8d42744 = L.circleMarker(
+                [1.280319, 103.839459],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_332f7abd57d3d9a3aa515bf953f0f532 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fcb0dc71dc72bacb053c919202da180e = $(`<div id="html_fcb0dc71dc72bacb053c919202da180e" style="width: 100.0%; height: 100.0%;">Outram Park<br>Type: MRT<br>Nearest station: Chinatown<br>Nearest distance: 0.662 km</div>`)[0];
+                popup_332f7abd57d3d9a3aa515bf953f0f532.setContent(html_fcb0dc71dc72bacb053c919202da180e);
+            
+        
+
+        circle_marker_df53b4a3a9197fe1af0974b7c8d42744.bindPopup(popup_332f7abd57d3d9a3aa515bf953f0f532)
+        ;
+
+        
+    
+    
+            var circle_marker_23a6b31572c351e1f4bc1b36a1f68180 = L.circleMarker(
+                [1.276385, 103.846771],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_79bd9d7b79cfbb4e0f05f938b85979d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfbf7cffd74d92a72fedcad099baf384 = $(`<div id="html_bfbf7cffd74d92a72fedcad099baf384" style="width: 100.0%; height: 100.0%;">Tanjong Pagar<br>Type: MRT<br>Nearest station: Telok Ayer<br>Nearest distance: 0.686 km</div>`)[0];
+                popup_79bd9d7b79cfbb4e0f05f938b85979d9.setContent(html_bfbf7cffd74d92a72fedcad099baf384);
+            
+        
+
+        circle_marker_23a6b31572c351e1f4bc1b36a1f68180.bindPopup(popup_79bd9d7b79cfbb4e0f05f938b85979d9)
+        ;
+
+        
+    
+    
+            var circle_marker_2b361769832af74d7f08fb274ed44e80 = L.circleMarker(
+                [1.300747, 103.855873],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_b8203d5c6ab63de22ac2c0e0cc7b72a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfd3fcc0f55aae7005901fbe4f8d44aa = $(`<div id="html_bfd3fcc0f55aae7005901fbe4f8d44aa" style="width: 100.0%; height: 100.0%;">Bugis<br>Type: MRT<br>Nearest station: Rochor<br>Nearest distance: 0.484 km</div>`)[0];
+                popup_b8203d5c6ab63de22ac2c0e0cc7b72a3.setContent(html_bfd3fcc0f55aae7005901fbe4f8d44aa);
+            
+        
+
+        circle_marker_2b361769832af74d7f08fb274ed44e80.bindPopup(popup_b8203d5c6ab63de22ac2c0e0cc7b72a3)
+        ;
+
+        
+    
+    
+            var circle_marker_112ac33b5214ea58694561f0db380d6b = L.circleMarker(
+                [1.307577, 103.863155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_133f225ae290fcd7a9a9136022fd8f7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a0b81c10f017da3401724e48b00ce48 = $(`<div id="html_8a0b81c10f017da3401724e48b00ce48" style="width: 100.0%; height: 100.0%;">Lavender<br>Type: MRT<br>Nearest station: Bendemeer<br>Nearest distance: 0.678 km</div>`)[0];
+                popup_133f225ae290fcd7a9a9136022fd8f7f.setContent(html_8a0b81c10f017da3401724e48b00ce48);
+            
+        
+
+        circle_marker_112ac33b5214ea58694561f0db380d6b.bindPopup(popup_133f225ae290fcd7a9a9136022fd8f7f)
+        ;
+
+        
+    
+    
+            var circle_marker_ba4fc3bca3fbbbdcc2d10cdc4d6334c1 = L.circleMarker(
+                [1.311532, 103.871372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f12eb431d4b6bf6b3c1ae12a030c3655 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c962fa289dd9e9e2b11fe978d3ecbeee = $(`<div id="html_c962fa289dd9e9e2b11fe978d3ecbeee" style="width: 100.0%; height: 100.0%;">Kallang<br>Type: MRT<br>Nearest station: Bendemeer<br>Nearest distance: 0.950 km</div>`)[0];
+                popup_f12eb431d4b6bf6b3c1ae12a030c3655.setContent(html_c962fa289dd9e9e2b11fe978d3ecbeee);
+            
+        
+
+        circle_marker_ba4fc3bca3fbbbdcc2d10cdc4d6334c1.bindPopup(popup_f12eb431d4b6bf6b3c1ae12a030c3655)
+        ;
+
+        
+    
+    
+            var circle_marker_8634223b533e9b9630a12820c8fb6d2d = L.circleMarker(
+                [1.316474, 103.882762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_a3c04d8db1dff3d8017d7a8cd1c95eab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34081278c76c1ebd0c133c3b42cef335 = $(`<div id="html_34081278c76c1ebd0c133c3b42cef335" style="width: 100.0%; height: 100.0%;">Aljunied<br>Type: MRT<br>Nearest station: Dakota<br>Nearest distance: 1.116 km</div>`)[0];
+                popup_a3c04d8db1dff3d8017d7a8cd1c95eab.setContent(html_34081278c76c1ebd0c133c3b42cef335);
+            
+        
+
+        circle_marker_8634223b533e9b9630a12820c8fb6d2d.bindPopup(popup_a3c04d8db1dff3d8017d7a8cd1c95eab)
+        ;
+
+        
+    
+    
+            var circle_marker_9063b84078c7d9b5afe4bda0b069c947 = L.circleMarker(
+                [1.318214, 103.893133],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_adc7ba467ca21f42429e85f0ff0fe4c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76ed9623d31536d84e7d240f202671d9 = $(`<div id="html_76ed9623d31536d84e7d240f202671d9" style="width: 100.0%; height: 100.0%;">Paya Lebar<br>Type: MRT<br>Nearest station: MacPherson<br>Nearest distance: 1.017 km</div>`)[0];
+                popup_adc7ba467ca21f42429e85f0ff0fe4c5.setContent(html_76ed9623d31536d84e7d240f202671d9);
+            
+        
+
+        circle_marker_9063b84078c7d9b5afe4bda0b069c947.bindPopup(popup_adc7ba467ca21f42429e85f0ff0fe4c5)
+        ;
+
+        
+    
+    
+            var circle_marker_bc2ee4e97b9fb1e0de9dd630ecb2aaf1 = L.circleMarker(
+                [1.319809, 103.902888],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7cd8152922effaaeb5f43162bf0add88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ef8f2c7b8aec0b09e372c47530ed7c3 = $(`<div id="html_9ef8f2c7b8aec0b09e372c47530ed7c3" style="width: 100.0%; height: 100.0%;">Eunos<br>Type: MRT<br>Nearest station: Paya Lebar<br>Nearest distance: 1.099 km</div>`)[0];
+                popup_7cd8152922effaaeb5f43162bf0add88.setContent(html_9ef8f2c7b8aec0b09e372c47530ed7c3);
+            
+        
+
+        circle_marker_bc2ee4e97b9fb1e0de9dd630ecb2aaf1.bindPopup(popup_7cd8152922effaaeb5f43162bf0add88)
+        ;
+
+        
+    
+    
+            var circle_marker_25b828866ae6abf3e308bb2e56afca04 = L.circleMarker(
+                [1.320998, 103.913433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f7578584fd15c51fdbe28fd51571f92a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8eccbad99946c7ca41528db75655efe3 = $(`<div id="html_8eccbad99946c7ca41528db75655efe3" style="width: 100.0%; height: 100.0%;">Kembangan<br>Type: MRT<br>Nearest station: Eunos<br>Nearest distance: 1.180 km</div>`)[0];
+                popup_f7578584fd15c51fdbe28fd51571f92a.setContent(html_8eccbad99946c7ca41528db75655efe3);
+            
+        
+
+        circle_marker_25b828866ae6abf3e308bb2e56afca04.bindPopup(popup_f7578584fd15c51fdbe28fd51571f92a)
+        ;
+
+        
+    
+    
+            var circle_marker_45589d563a3c132cb43aa9bb98d2e059 = L.circleMarker(
+                [1.324043, 103.930205],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_82b338c741a71678b0a76e738e418559 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0569da11c1329143455483491e62a5d = $(`<div id="html_c0569da11c1329143455483491e62a5d" style="width: 100.0%; height: 100.0%;">Bedok<br>Type: MRT<br>Nearest station: Bedok Reservoir<br>Nearest distance: 1.432 km</div>`)[0];
+                popup_82b338c741a71678b0a76e738e418559.setContent(html_c0569da11c1329143455483491e62a5d);
+            
+        
+
+        circle_marker_45589d563a3c132cb43aa9bb98d2e059.bindPopup(popup_82b338c741a71678b0a76e738e418559)
+        ;
+
+        
+    
+    
+            var circle_marker_87aebba3cb04f1f9116ce34fac47bbe2 = L.circleMarker(
+                [1.327309, 103.946479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e0a287e9790bd352382d82db3155d3a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1dce0a1f4aa88e36a0d1442a97c154c = $(`<div id="html_c1dce0a1f4aa88e36a0d1442a97c154c" style="width: 100.0%; height: 100.0%;">Tanah Merah<br>Type: MRT<br>Nearest station: Bedok Reservoir<br>Nearest distance: 1.813 km</div>`)[0];
+                popup_e0a287e9790bd352382d82db3155d3a6.setContent(html_c1dce0a1f4aa88e36a0d1442a97c154c);
+            
+        
+
+        circle_marker_87aebba3cb04f1f9116ce34fac47bbe2.bindPopup(popup_e0a287e9790bd352382d82db3155d3a6)
+        ;
+
+        
+    
+    
+            var circle_marker_0cf00551453a68294d0992dad38fcd3f = L.circleMarker(
+                [1.343237, 103.953343],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_8fa190f80ae2cc3553b7178cc80d5ca1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce9fc095a23a3ec8ad30f5f641ab127f = $(`<div id="html_ce9fc095a23a3ec8ad30f5f641ab127f" style="width: 100.0%; height: 100.0%;">Simei<br>Type: MRT<br>Nearest station: Upper Changi<br>Nearest distance: 0.914 km</div>`)[0];
+                popup_8fa190f80ae2cc3553b7178cc80d5ca1.setContent(html_ce9fc095a23a3ec8ad30f5f641ab127f);
+            
+        
+
+        circle_marker_0cf00551453a68294d0992dad38fcd3f.bindPopup(popup_8fa190f80ae2cc3553b7178cc80d5ca1)
+        ;
+
+        
+    
+    
+            var circle_marker_781d71f5c0a3b77d9df604926c096168 = L.circleMarker(
+                [1.354467, 103.943325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_3f96c52a0832f936823964a426e21f74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebb81e5432157a71ec6ccc8b271921c6 = $(`<div id="html_ebb81e5432157a71ec6ccc8b271921c6" style="width: 100.0%; height: 100.0%;">Tampines<br>Type: MRT<br>Nearest station: Tampines West<br>Nearest distance: 1.138 km</div>`)[0];
+                popup_3f96c52a0832f936823964a426e21f74.setContent(html_ebb81e5432157a71ec6ccc8b271921c6);
+            
+        
+
+        circle_marker_781d71f5c0a3b77d9df604926c096168.bindPopup(popup_3f96c52a0832f936823964a426e21f74)
+        ;
+
+        
+    
+    
+            var circle_marker_7ae67abce51fd42ca61f43b864b3b6c4 = L.circleMarker(
+                [1.373234, 103.949343],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_4fa5f4086799420c09e46846ff2bff06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a1aae806b6809da5c9698afb0974780 = $(`<div id="html_7a1aae806b6809da5c9698afb0974780" style="width: 100.0%; height: 100.0%;">Pasir Ris<br>Type: MRT<br>Nearest station: Tampines East<br>Nearest distance: 2.001 km</div>`)[0];
+                popup_4fa5f4086799420c09e46846ff2bff06.setContent(html_7a1aae806b6809da5c9698afb0974780);
+            
+        
+
+        circle_marker_7ae67abce51fd42ca61f43b864b3b6c4.bindPopup(popup_4fa5f4086799420c09e46846ff2bff06)
+        ;
+
+        
+    
+    
+            var circle_marker_69cfb0c91fa550dcefc882eb55c9c774 = L.circleMarker(
+                [1.334479, 103.961459],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_8284e0d896fb2dfcf8f3eaf9f915f196 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68315ce64ddb78a4d92480c88c8f4764 = $(`<div id="html_68315ce64ddb78a4d92480c88c8f4764" style="width: 100.0%; height: 100.0%;">Expo<br>Type: MRT<br>Nearest station: Upper Changi<br>Nearest distance: 0.861 km</div>`)[0];
+                popup_8284e0d896fb2dfcf8f3eaf9f915f196.setContent(html_68315ce64ddb78a4d92480c88c8f4764);
+            
+        
+
+        circle_marker_69cfb0c91fa550dcefc882eb55c9c774.bindPopup(popup_8284e0d896fb2dfcf8f3eaf9f915f196)
+        ;
+
+        
+    
+    
+            var circle_marker_c878064a97b31f3a3e3b818ffa898299 = L.circleMarker(
+                [1.357622, 103.988487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_801284087d91b8ce5f8a4d4dd4742934 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4353e198e0c13d47abc168d9e0b5961 = $(`<div id="html_f4353e198e0c13d47abc168d9e0b5961" style="width: 100.0%; height: 100.0%;">Changi Airport<br>Type: MRT<br>Nearest station: Upper Changi<br>Nearest distance: 3.454 km</div>`)[0];
+                popup_801284087d91b8ce5f8a4d4dd4742934.setContent(html_f4353e198e0c13d47abc168d9e0b5961);
+            
+        
+
+        circle_marker_c878064a97b31f3a3e3b818ffa898299.bindPopup(popup_801284087d91b8ce5f8a4d4dd4742934)
+        ;
+
+        
+    
+    
+            var circle_marker_477117d1fdb385a6233cacb6faf8679e = L.circleMarker(
+                [1.265453, 103.820514],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e75a37eb9dc69b0304b82fea5be24b4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ce92303ec3a20ffe26bfbbc1ae5b57f = $(`<div id="html_6ce92303ec3a20ffe26bfbbc1ae5b57f" style="width: 100.0%; height: 100.0%;">HarbourFront<br>Type: MRT<br>Nearest station: Telok Blangah<br>Nearest distance: 1.322 km</div>`)[0];
+                popup_e75a37eb9dc69b0304b82fea5be24b4d.setContent(html_6ce92303ec3a20ffe26bfbbc1ae5b57f);
+            
+        
+
+        circle_marker_477117d1fdb385a6233cacb6faf8679e.bindPopup(popup_e75a37eb9dc69b0304b82fea5be24b4d)
+        ;
+
+        
+    
+    
+            var circle_marker_3e3894875a087e68294dce893bb285d9 = L.circleMarker(
+                [1.284566, 103.843626],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_2722a0b0006752c3bb9619ddf74ef655 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_201ecff5870cc7ac8810601ec44f0939 = $(`<div id="html_201ecff5870cc7ac8810601ec44f0939" style="width: 100.0%; height: 100.0%;">Chinatown<br>Type: MRT<br>Nearest station: Telok Ayer<br>Nearest distance: 0.607 km</div>`)[0];
+                popup_2722a0b0006752c3bb9619ddf74ef655.setContent(html_201ecff5870cc7ac8810601ec44f0939);
+            
+        
+
+        circle_marker_3e3894875a087e68294dce893bb285d9.bindPopup(popup_2722a0b0006752c3bb9619ddf74ef655)
+        ;
+
+        
+    
+    
+            var circle_marker_43105b09335bd9f17eca631fbbc8925b = L.circleMarker(
+                [1.288949, 103.847521],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e3c81571ca54bacd794d2d4cd5fe0b32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0dc34fe3b75311d1eeea98c40d454f03 = $(`<div id="html_0dc34fe3b75311d1eeea98c40d454f03" style="width: 100.0%; height: 100.0%;">Clarke Quay<br>Type: MRT<br>Nearest station: Fort Canning<br>Nearest distance: 0.439 km</div>`)[0];
+                popup_e3c81571ca54bacd794d2d4cd5fe0b32.setContent(html_0dc34fe3b75311d1eeea98c40d454f03);
+            
+        
+
+        circle_marker_43105b09335bd9f17eca631fbbc8925b.bindPopup(popup_e3c81571ca54bacd794d2d4cd5fe0b32)
+        ;
+
+        
+    
+    
+            var circle_marker_a62c2cb64b8bfaa991c91a84990f6dbf = L.circleMarker(
+                [1.306691, 103.849396],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f854ae5d26083765129dbd1ab9c30a4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56ae4469f7480398671fe5904094e16d = $(`<div id="html_56ae4469f7480398671fe5904094e16d" style="width: 100.0%; height: 100.0%;">Little India<br>Type: MRT<br>Nearest station: Rochor<br>Nearest distance: 0.493 km</div>`)[0];
+                popup_f854ae5d26083765129dbd1ab9c30a4e.setContent(html_56ae4469f7480398671fe5904094e16d);
+            
+        
+
+        circle_marker_a62c2cb64b8bfaa991c91a84990f6dbf.bindPopup(popup_f854ae5d26083765129dbd1ab9c30a4e)
+        ;
+
+        
+    
+    
+            var circle_marker_b790567f1ad11f914994b7934943b9ca = L.circleMarker(
+                [1.312679, 103.854872],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_9575f8f32aa7fb32a292b9f21e205beb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d82e52b809809015a1541c842b43a292 = $(`<div id="html_d82e52b809809015a1541c842b43a292" style="width: 100.0%; height: 100.0%;">Farrer Park<br>Type: MRT<br>Nearest station: Jalan Besar<br>Nearest distance: 0.795 km</div>`)[0];
+                popup_9575f8f32aa7fb32a292b9f21e205beb.setContent(html_d82e52b809809015a1541c842b43a292);
+            
+        
+
+        circle_marker_b790567f1ad11f914994b7934943b9ca.bindPopup(popup_9575f8f32aa7fb32a292b9f21e205beb)
+        ;
+
+        
+    
+    
+            var circle_marker_86be586819c5477bf79e03ad73da12ca = L.circleMarker(
+                [1.320091, 103.861655],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_37b23389d2374ff3f0d9168f1abc109a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e94d71d80c6f31e39090733595653fc2 = $(`<div id="html_e94d71d80c6f31e39090733595653fc2" style="width: 100.0%; height: 100.0%;">Boon Keng<br>Type: MRT<br>Nearest station: Bendemeer<br>Nearest distance: 0.731 km</div>`)[0];
+                popup_37b23389d2374ff3f0d9168f1abc109a.setContent(html_e94d71d80c6f31e39090733595653fc2);
+            
+        
+
+        circle_marker_86be586819c5477bf79e03ad73da12ca.bindPopup(popup_37b23389d2374ff3f0d9168f1abc109a)
+        ;
+
+        
+    
+    
+            var circle_marker_dafce3e04e4f611601ca8f12ec128e54 = L.circleMarker(
+                [1.331316, 103.868779],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_6d978a293cc325e9fe85341be2dd0594 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36ce65da406c874b0355fff7efd3b53e = $(`<div id="html_36ce65da406c874b0355fff7efd3b53e" style="width: 100.0%; height: 100.0%;">Potong Pasir<br>Type: MRT<br>Nearest station: Woodleigh<br>Nearest distance: 0.903 km</div>`)[0];
+                popup_6d978a293cc325e9fe85341be2dd0594.setContent(html_36ce65da406c874b0355fff7efd3b53e);
+            
+        
+
+        circle_marker_dafce3e04e4f611601ca8f12ec128e54.bindPopup(popup_6d978a293cc325e9fe85341be2dd0594)
+        ;
+
+        
+    
+    
+            var circle_marker_c1a9aa618990579201f154f84f184c95 = L.circleMarker(
+                [1.339202, 103.870727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_fb750692f88c15a51b82bb9b73d6a8fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0f14b09641642fd468a3571a0835025 = $(`<div id="html_c0f14b09641642fd468a3571a0835025" style="width: 100.0%; height: 100.0%;">Woodleigh<br>Type: MRT<br>Nearest station: Potong Pasir<br>Nearest distance: 0.903 km</div>`)[0];
+                popup_fb750692f88c15a51b82bb9b73d6a8fd.setContent(html_c0f14b09641642fd468a3571a0835025);
+            
+        
+
+        circle_marker_c1a9aa618990579201f154f84f184c95.bindPopup(popup_fb750692f88c15a51b82bb9b73d6a8fd)
+        ;
+
+        
+    
+    
+            var circle_marker_4eee28bcdf088cebd43f62e55aaa6e9e = L.circleMarker(
+                [1.349862, 103.873635],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_ad14f20905d0602270c946e168e86bee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dbd8068a6f5320c58e9c4e6af231cfa0 = $(`<div id="html_dbd8068a6f5320c58e9c4e6af231cfa0" style="width: 100.0%; height: 100.0%;">Serangoon<br>Type: MRT<br>Nearest station: Lorong Chuan<br>Nearest distance: 0.982 km</div>`)[0];
+                popup_ad14f20905d0602270c946e168e86bee.setContent(html_dbd8068a6f5320c58e9c4e6af231cfa0);
+            
+        
+
+        circle_marker_4eee28bcdf088cebd43f62e55aaa6e9e.bindPopup(popup_ad14f20905d0602270c946e168e86bee)
+        ;
+
+        
+    
+    
+            var circle_marker_a1fe122d06052052ac525d4efba1ebd7 = L.circleMarker(
+                [1.360207, 103.885163],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_32e54537f9b4e6761b0397d4e3251747 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efca7e2974af13ae6ff521d031418e72 = $(`<div id="html_efca7e2974af13ae6ff521d031418e72" style="width: 100.0%; height: 100.0%;">Kovan<br>Type: MRT<br>Nearest station: Hougang<br>Nearest distance: 1.491 km</div>`)[0];
+                popup_32e54537f9b4e6761b0397d4e3251747.setContent(html_efca7e2974af13ae6ff521d031418e72);
+            
+        
+
+        circle_marker_a1fe122d06052052ac525d4efba1ebd7.bindPopup(popup_32e54537f9b4e6761b0397d4e3251747)
+        ;
+
+        
+    
+    
+            var circle_marker_19cf23e456c76bd73c1936e7143fdc11 = L.circleMarker(
+                [1.371406, 103.892533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_3475e7bc32fbfeeb96722c18f634ffea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af5760c7415b55d8dd76f8b1c014a320 = $(`<div id="html_af5760c7415b55d8dd76f8b1c014a320" style="width: 100.0%; height: 100.0%;">Hougang<br>Type: MRT<br>Nearest station: Buangkok<br>Nearest distance: 1.291 km</div>`)[0];
+                popup_3475e7bc32fbfeeb96722c18f634ffea.setContent(html_af5760c7415b55d8dd76f8b1c014a320);
+            
+        
+
+        circle_marker_19cf23e456c76bd73c1936e7143fdc11.bindPopup(popup_3475e7bc32fbfeeb96722c18f634ffea)
+        ;
+
+        
+    
+    
+            var circle_marker_5abab5f63bebec357c56dd07e7014c41 = L.circleMarker(
+                [1.382991, 103.893347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_91fa590bb327ca01e1b9ee8b4354ed17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb50c6311104c9ec435506f8c3bdac6c = $(`<div id="html_cb50c6311104c9ec435506f8c3bdac6c" style="width: 100.0%; height: 100.0%;">Buangkok<br>Type: MRT<br>Nearest station: Ranggung<br>Nearest distance: 0.466 km</div>`)[0];
+                popup_91fa590bb327ca01e1b9ee8b4354ed17.setContent(html_cb50c6311104c9ec435506f8c3bdac6c);
+            
+        
+
+        circle_marker_5abab5f63bebec357c56dd07e7014c41.bindPopup(popup_91fa590bb327ca01e1b9ee8b4354ed17)
+        ;
+
+        
+    
+    
+            var circle_marker_564e1cbd023507af721bb3fcaa9ad594 = L.circleMarker(
+                [1.391682, 103.895475],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_28d5567e8c5fef91acd57213a5c23df2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0047decaa83cffc4501cd3404952b7f = $(`<div id="html_f0047decaa83cffc4501cd3404952b7f" style="width: 100.0%; height: 100.0%;">Sengkang<br>Type: MRT<br>Nearest station: Cheng Lim<br>Nearest distance: 0.550 km</div>`)[0];
+                popup_28d5567e8c5fef91acd57213a5c23df2.setContent(html_f0047decaa83cffc4501cd3404952b7f);
+            
+        
+
+        circle_marker_564e1cbd023507af721bb3fcaa9ad594.bindPopup(popup_28d5567e8c5fef91acd57213a5c23df2)
+        ;
+
+        
+    
+    
+            var circle_marker_ac3711e7d375c4d36a3e286fc33498a9 = L.circleMarker(
+                [1.405191, 103.902367],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_ec3686f601f48281b9e35c487e6fbde8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1049bc3a05c4261e0940c78913ab8903 = $(`<div id="html_1049bc3a05c4261e0940c78913ab8903" style="width: 100.0%; height: 100.0%;">Punggol<br>Type: MRT<br>Nearest station: Sumang<br>Nearest distance: 0.557 km</div>`)[0];
+                popup_ec3686f601f48281b9e35c487e6fbde8.setContent(html_1049bc3a05c4261e0940c78913ab8903);
+            
+        
+
+        circle_marker_ac3711e7d375c4d36a3e286fc33498a9.bindPopup(popup_ec3686f601f48281b9e35c487e6fbde8)
+        ;
+
+        
+    
+    
+            var circle_marker_6535a9496013ec6faae4d55ac928dba6 = L.circleMarker(
+                [1.296978, 103.850715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_b78335f3097b2afbf73c23906b34d443 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5e48da93c36d0f84ffa5755c6303db6 = $(`<div id="html_c5e48da93c36d0f84ffa5755c6303db6" style="width: 100.0%; height: 100.0%;">Bras Basah<br>Type: MRT<br>Nearest station: Bencoolen<br>Nearest distance: 0.185 km</div>`)[0];
+                popup_b78335f3097b2afbf73c23906b34d443.setContent(html_c5e48da93c36d0f84ffa5755c6303db6);
+            
+        
+
+        circle_marker_6535a9496013ec6faae4d55ac928dba6.bindPopup(popup_b78335f3097b2afbf73c23906b34d443)
+        ;
+
+        
+    
+    
+            var circle_marker_73af9d92fad54f46745e44aed8d24e92 = L.circleMarker(
+                [1.293995, 103.855396],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7fd1c145afb1faf68b744170229b60de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11ebebf37ed58e3fc4e5bec107c34ca9 = $(`<div id="html_11ebebf37ed58e3fc4e5bec107c34ca9" style="width: 100.0%; height: 100.0%;">Esplanade<br>Type: MRT<br>Nearest station: City Hall<br>Nearest distance: 0.380 km</div>`)[0];
+                popup_7fd1c145afb1faf68b744170229b60de.setContent(html_11ebebf37ed58e3fc4e5bec107c34ca9);
+            
+        
+
+        circle_marker_73af9d92fad54f46745e44aed8d24e92.bindPopup(popup_7fd1c145afb1faf68b744170229b60de)
+        ;
+
+        
+    
+    
+            var circle_marker_9e3f7aa244fac96a2503f9145b87b157 = L.circleMarker(
+                [1.294063, 103.860156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_15bb73ee421186a72d084d944f8d08b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce06063ff0aaa09e4e5a2bdc78cfa3e7 = $(`<div id="html_ce06063ff0aaa09e4e5a2bdc78cfa3e7" style="width: 100.0%; height: 100.0%;">Promenade<br>Type: MRT<br>Nearest station: Esplanade<br>Nearest distance: 0.529 km</div>`)[0];
+                popup_15bb73ee421186a72d084d944f8d08b3.setContent(html_ce06063ff0aaa09e4e5a2bdc78cfa3e7);
+            
+        
+
+        circle_marker_9e3f7aa244fac96a2503f9145b87b157.bindPopup(popup_15bb73ee421186a72d084d944f8d08b3)
+        ;
+
+        
+    
+    
+            var circle_marker_2662d7a628499b099e6bed6c51639bd0 = L.circleMarker(
+                [1.300292, 103.863449],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_a5d652fd240d08664c5e11e5b5192651 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d517cbf983c8621c4128171704aa75ab = $(`<div id="html_d517cbf983c8621c4128171704aa75ab" style="width: 100.0%; height: 100.0%;">Nicoll Highway<br>Type: MRT<br>Nearest station: Promenade<br>Nearest distance: 0.783 km</div>`)[0];
+                popup_a5d652fd240d08664c5e11e5b5192651.setContent(html_d517cbf983c8621c4128171704aa75ab);
+            
+        
+
+        circle_marker_2662d7a628499b099e6bed6c51639bd0.bindPopup(popup_a5d652fd240d08664c5e11e5b5192651)
+        ;
+
+        
+    
+    
+            var circle_marker_9fecd76e2a443bbe16c683dd8491b3bd = L.circleMarker(
+                [1.302847, 103.875417],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_6cc99dc790751846a29d0167e5b377b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e02deebd4daf46dff2605da65cb3d349 = $(`<div id="html_e02deebd4daf46dff2605da65cb3d349" style="width: 100.0%; height: 100.0%;">Stadium<br>Type: MRT<br>Nearest station: Mountbatten<br>Nearest distance: 0.935 km</div>`)[0];
+                popup_6cc99dc790751846a29d0167e5b377b5.setContent(html_e02deebd4daf46dff2605da65cb3d349);
+            
+        
+
+        circle_marker_9fecd76e2a443bbe16c683dd8491b3bd.bindPopup(popup_6cc99dc790751846a29d0167e5b377b5)
+        ;
+
+        
+    
+    
+            var circle_marker_ecb5682d2026c56e3460622ca8d99406 = L.circleMarker(
+                [1.306106, 103.883175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_c31e7535ab91b57c948395fa24973732 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41df7f408f1bb9edd2842e8069adf499 = $(`<div id="html_41df7f408f1bb9edd2842e8069adf499" style="width: 100.0%; height: 100.0%;">Mountbatten<br>Type: MRT<br>Nearest station: Dakota<br>Nearest distance: 0.681 km</div>`)[0];
+                popup_c31e7535ab91b57c948395fa24973732.setContent(html_41df7f408f1bb9edd2842e8069adf499);
+            
+        
+
+        circle_marker_ecb5682d2026c56e3460622ca8d99406.bindPopup(popup_c31e7535ab91b57c948395fa24973732)
+        ;
+
+        
+    
+    
+            var circle_marker_e77c72216538aa60dee09750f9cc3021 = L.circleMarker(
+                [1.308474, 103.888825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_9aefb0b9d14bab131ef3bde365c864ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5479f69ec33ccad19d1059f17328f0d = $(`<div id="html_b5479f69ec33ccad19d1059f17328f0d" style="width: 100.0%; height: 100.0%;">Dakota<br>Type: MRT<br>Nearest station: Mountbatten<br>Nearest distance: 0.681 km</div>`)[0];
+                popup_9aefb0b9d14bab131ef3bde365c864ff.setContent(html_b5479f69ec33ccad19d1059f17328f0d);
+            
+        
+
+        circle_marker_e77c72216538aa60dee09750f9cc3021.bindPopup(popup_9aefb0b9d14bab131ef3bde365c864ff)
+        ;
+
+        
+    
+    
+            var circle_marker_ed9548578195c127b94b047c59f2cf24 = L.circleMarker(
+                [1.326769, 103.889901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_8a461110c5b6e03490e6561e78e7eaed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35e59ea39f4592c938b4e72cb2ccdf52 = $(`<div id="html_35e59ea39f4592c938b4e72cb2ccdf52" style="width: 100.0%; height: 100.0%;">MacPherson<br>Type: MRT<br>Nearest station: Mattar<br>Nearest distance: 0.733 km</div>`)[0];
+                popup_8a461110c5b6e03490e6561e78e7eaed.setContent(html_35e59ea39f4592c938b4e72cb2ccdf52);
+            
+        
+
+        circle_marker_ed9548578195c127b94b047c59f2cf24.bindPopup(popup_8a461110c5b6e03490e6561e78e7eaed)
+        ;
+
+        
+    
+    
+            var circle_marker_c3c964ef01dd062be6e3b87839e5054f = L.circleMarker(
+                [1.33594, 103.887706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_812b9cd0b6c2ae5f835eccbde7d18b70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b49ff013139426c71bb4cecabffe8314 = $(`<div id="html_b49ff013139426c71bb4cecabffe8314" style="width: 100.0%; height: 100.0%;">Tai Seng<br>Type: MRT<br>Nearest station: MacPherson<br>Nearest distance: 1.049 km</div>`)[0];
+                popup_812b9cd0b6c2ae5f835eccbde7d18b70.setContent(html_b49ff013139426c71bb4cecabffe8314);
+            
+        
+
+        circle_marker_c3c964ef01dd062be6e3b87839e5054f.bindPopup(popup_812b9cd0b6c2ae5f835eccbde7d18b70)
+        ;
+
+        
+    
+    
+            var circle_marker_196fd1f7871ac385366ee7f7f2f04db2 = L.circleMarker(
+                [1.342923, 103.87966],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_35a53641d00d6143a832444a7a57dcd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3975690934971387f70a8e11e228f48c = $(`<div id="html_3975690934971387f70a8e11e228f48c" style="width: 100.0%; height: 100.0%;">Bartley<br>Type: MRT<br>Nearest station: Serangoon<br>Nearest distance: 1.022 km</div>`)[0];
+                popup_35a53641d00d6143a832444a7a57dcd1.setContent(html_3975690934971387f70a8e11e228f48c);
+            
+        
+
+        circle_marker_196fd1f7871ac385366ee7f7f2f04db2.bindPopup(popup_35a53641d00d6143a832444a7a57dcd1)
+        ;
+
+        
+    
+    
+            var circle_marker_f2391563cdb2108eb1dd50a20e85ba70 = L.circleMarker(
+                [1.35153, 103.864957],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_04a47092457f83a103caf526d6010d89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2506228d0f9067816204f08cb66dec9b = $(`<div id="html_2506228d0f9067816204f08cb66dec9b" style="width: 100.0%; height: 100.0%;">Lorong Chuan<br>Type: MRT<br>Nearest station: Serangoon<br>Nearest distance: 0.982 km</div>`)[0];
+                popup_04a47092457f83a103caf526d6010d89.setContent(html_2506228d0f9067816204f08cb66dec9b);
+            
+        
+
+        circle_marker_f2391563cdb2108eb1dd50a20e85ba70.bindPopup(popup_04a47092457f83a103caf526d6010d89)
+        ;
+
+        
+    
+    
+            var circle_marker_4210ef62a08a84a48eb6254445454535 = L.circleMarker(
+                [1.349089, 103.839116],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_5c6c93132009bb226a59d501a8eecb8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37c4a7ad5bb3d7d72361e93663c463da = $(`<div id="html_37c4a7ad5bb3d7d72361e93663c463da" style="width: 100.0%; height: 100.0%;">Marymount<br>Type: MRT<br>Nearest station: Bishan<br>Nearest distance: 1.031 km</div>`)[0];
+                popup_5c6c93132009bb226a59d501a8eecb8b.setContent(html_37c4a7ad5bb3d7d72361e93663c463da);
+            
+        
+
+        circle_marker_4210ef62a08a84a48eb6254445454535.bindPopup(popup_5c6c93132009bb226a59d501a8eecb8b)
+        ;
+
+        
+    
+    
+            var circle_marker_6c5c7554ea47073704abd7554fc56d18 = L.circleMarker(
+                [1.337649, 103.839627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_853cf7db71318873c5e91bc6ff806223 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73a09996fb90117dd114aafcec95838b = $(`<div id="html_73a09996fb90117dd114aafcec95838b" style="width: 100.0%; height: 100.0%;">Caldecott<br>Type: MRT<br>Nearest station: Braddell<br>Nearest distance: 0.891 km</div>`)[0];
+                popup_853cf7db71318873c5e91bc6ff806223.setContent(html_73a09996fb90117dd114aafcec95838b);
+            
+        
+
+        circle_marker_6c5c7554ea47073704abd7554fc56d18.bindPopup(popup_853cf7db71318873c5e91bc6ff806223)
+        ;
+
+        
+    
+    
+            var circle_marker_741df976c06eb5e6a5342a0cf8b1c01b = L.circleMarker(
+                [1.322387, 103.814905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_0d337505ca7b1e222db1f80365fd6476 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_816bbb7c62dbdb70781486282b18d391 = $(`<div id="html_816bbb7c62dbdb70781486282b18d391" style="width: 100.0%; height: 100.0%;">Botanic Gardens<br>Type: MRT<br>Nearest station: Tan Kah Kee<br>Nearest distance: 0.862 km</div>`)[0];
+                popup_0d337505ca7b1e222db1f80365fd6476.setContent(html_816bbb7c62dbdb70781486282b18d391);
+            
+        
+
+        circle_marker_741df976c06eb5e6a5342a0cf8b1c01b.bindPopup(popup_0d337505ca7b1e222db1f80365fd6476)
+        ;
+
+        
+    
+    
+            var circle_marker_c662743ae058ff79232c548530ee65f4 = L.circleMarker(
+                [1.317606, 103.807711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_156201eec00e74ab6cb3891a1964f2f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d93eb2b1e3409840597fe3c80fcf768e = $(`<div id="html_d93eb2b1e3409840597fe3c80fcf768e" style="width: 100.0%; height: 100.0%;">Farrer Road<br>Type: MRT<br>Nearest station: Tan Kah Kee<br>Nearest distance: 0.914 km</div>`)[0];
+                popup_156201eec00e74ab6cb3891a1964f2f7.setContent(html_d93eb2b1e3409840597fe3c80fcf768e);
+            
+        
+
+        circle_marker_c662743ae058ff79232c548530ee65f4.bindPopup(popup_156201eec00e74ab6cb3891a1964f2f7)
+        ;
+
+        
+    
+    
+            var circle_marker_e02e80309f4147012f19c9bcca06f6b2 = L.circleMarker(
+                [1.311189, 103.796119],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_062182ecf46eca24d9d014a024b0d1b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58b50c158aed5cddd5c685f8d645e5bc = $(`<div id="html_58b50c158aed5cddd5c685f8d645e5bc" style="width: 100.0%; height: 100.0%;">Holland Village<br>Type: MRT<br>Nearest station: Buona Vista<br>Nearest distance: 0.800 km</div>`)[0];
+                popup_062182ecf46eca24d9d014a024b0d1b3.setContent(html_58b50c158aed5cddd5c685f8d645e5bc);
+            
+        
+
+        circle_marker_e02e80309f4147012f19c9bcca06f6b2.bindPopup(popup_062182ecf46eca24d9d014a024b0d1b3)
+        ;
+
+        
+    
+    
+            var circle_marker_4be0a6c7cf33a0e3bb7f1753a39d711c = L.circleMarker(
+                [1.299854, 103.787584],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d6b146155c48241e06cc881e1d8be898 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_913ae4debbb0724012a2b9bdd5271936 = $(`<div id="html_913ae4debbb0724012a2b9bdd5271936" style="width: 100.0%; height: 100.0%;">one-north<br>Type: MRT<br>Nearest station: Kent Ridge<br>Nearest distance: 0.775 km</div>`)[0];
+                popup_d6b146155c48241e06cc881e1d8be898.setContent(html_913ae4debbb0724012a2b9bdd5271936);
+            
+        
+
+        circle_marker_4be0a6c7cf33a0e3bb7f1753a39d711c.bindPopup(popup_d6b146155c48241e06cc881e1d8be898)
+        ;
+
+        
+    
+    
+            var circle_marker_d519a178dae14a2aa8d0c30deef17f3d = L.circleMarker(
+                [1.293629, 103.784441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_39b88e4ec38e27547464536257581bef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32c3c0d58f338e8b2fe87abb1b994cfc = $(`<div id="html_32c3c0d58f338e8b2fe87abb1b994cfc" style="width: 100.0%; height: 100.0%;">Kent Ridge<br>Type: MRT<br>Nearest station: one-north<br>Nearest distance: 0.775 km</div>`)[0];
+                popup_39b88e4ec38e27547464536257581bef.setContent(html_32c3c0d58f338e8b2fe87abb1b994cfc);
+            
+        
+
+        circle_marker_d519a178dae14a2aa8d0c30deef17f3d.bindPopup(popup_39b88e4ec38e27547464536257581bef)
+        ;
+
+        
+    
+    
+            var circle_marker_be3ba5ffffb8626c3b8cb182f9190675 = L.circleMarker(
+                [1.283149, 103.781991],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_08f9c7494f930d87064d9354440bf9ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4148fd888696e65f22bca6f246d90c2 = $(`<div id="html_d4148fd888696e65f22bca6f246d90c2" style="width: 100.0%; height: 100.0%;">Haw Par Villa<br>Type: MRT<br>Nearest station: Kent Ridge<br>Nearest distance: 1.197 km</div>`)[0];
+                popup_08f9c7494f930d87064d9354440bf9ce.setContent(html_d4148fd888696e65f22bca6f246d90c2);
+            
+        
+
+        circle_marker_be3ba5ffffb8626c3b8cb182f9190675.bindPopup(popup_08f9c7494f930d87064d9354440bf9ce)
+        ;
+
+        
+    
+    
+            var circle_marker_acd5580c80d802eb431752d0ee72d104 = L.circleMarker(
+                [1.276111, 103.791893],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d914357882adfad34c5095b3db420d48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0358a6d92d0ec3cfa3c66b09a210ccc = $(`<div id="html_a0358a6d92d0ec3cfa3c66b09a210ccc" style="width: 100.0%; height: 100.0%;">Pasir Panjang<br>Type: MRT<br>Nearest station: Labrador Park<br>Nearest distance: 1.264 km</div>`)[0];
+                popup_d914357882adfad34c5095b3db420d48.setContent(html_a0358a6d92d0ec3cfa3c66b09a210ccc);
+            
+        
+
+        circle_marker_acd5580c80d802eb431752d0ee72d104.bindPopup(popup_d914357882adfad34c5095b3db420d48)
+        ;
+
+        
+    
+    
+            var circle_marker_8e9193a8baf74e860c2557e8e774de3f = L.circleMarker(
+                [1.27218, 103.802557],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_256536e7c5d0c6c403583d406794d1bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c8548f631f67b81e21aed51bb5d8475 = $(`<div id="html_6c8548f631f67b81e21aed51bb5d8475" style="width: 100.0%; height: 100.0%;">Labrador Park<br>Type: MRT<br>Nearest station: Telok Blangah<br>Nearest distance: 0.829 km</div>`)[0];
+                popup_256536e7c5d0c6c403583d406794d1bb.setContent(html_6c8548f631f67b81e21aed51bb5d8475);
+            
+        
+
+        circle_marker_8e9193a8baf74e860c2557e8e774de3f.bindPopup(popup_256536e7c5d0c6c403583d406794d1bb)
+        ;
+
+        
+    
+    
+            var circle_marker_9b12e7785ef38b5bdccddd11a1b1d40b = L.circleMarker(
+                [1.270769, 103.809878],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_0fc38ff2d0f4d23ebd04502220d9e0ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf5e9a46a92a5b43cdb89beda9bb4952 = $(`<div id="html_cf5e9a46a92a5b43cdb89beda9bb4952" style="width: 100.0%; height: 100.0%;">Telok Blangah<br>Type: MRT<br>Nearest station: Labrador Park<br>Nearest distance: 0.829 km</div>`)[0];
+                popup_0fc38ff2d0f4d23ebd04502220d9e0ac.setContent(html_cf5e9a46a92a5b43cdb89beda9bb4952);
+            
+        
+
+        circle_marker_9b12e7785ef38b5bdccddd11a1b1d40b.bindPopup(popup_0fc38ff2d0f4d23ebd04502220d9e0ac)
+        ;
+
+        
+    
+    
+            var circle_marker_a725f51cbb546c94744b8ee5d3294c43 = L.circleMarker(
+                [1.281371, 103.858998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_1e4502f90fc955ebcfa83b6a1725110e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9152a35a621f1796061115c5c71fe6c2 = $(`<div id="html_9152a35a621f1796061115c5c71fe6c2" style="width: 100.0%; height: 100.0%;">Bayfront<br>Type: MRT<br>Nearest station: Downtown<br>Nearest distance: 0.720 km</div>`)[0];
+                popup_1e4502f90fc955ebcfa83b6a1725110e.setContent(html_9152a35a621f1796061115c5c71fe6c2);
+            
+        
+
+        circle_marker_a725f51cbb546c94744b8ee5d3294c43.bindPopup(popup_1e4502f90fc955ebcfa83b6a1725110e)
+        ;
+
+        
+    
+    
+            var circle_marker_2d194494c02193fbb0b05879fbf3cc8b = L.circleMarker(
+                [1.37834, 103.762452],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e88d8bfe39240eaeec5b17454503def2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfa16a86531ee64f25af0ba72bfadab2 = $(`<div id="html_bfa16a86531ee64f25af0ba72bfadab2" style="width: 100.0%; height: 100.0%;">Bukit Panjang<br>Type: MRT<br>Nearest station: Petir<br>Nearest distance: 0.459 km</div>`)[0];
+                popup_e88d8bfe39240eaeec5b17454503def2.setContent(html_bfa16a86531ee64f25af0ba72bfadab2);
+            
+        
+
+        circle_marker_2d194494c02193fbb0b05879fbf3cc8b.bindPopup(popup_e88d8bfe39240eaeec5b17454503def2)
+        ;
+
+        
+    
+    
+            var circle_marker_9b1540b9b3e3fd5633a05a9014f66750 = L.circleMarker(
+                [1.369997, 103.764569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_a53fb4333b64998982ca6e64b9a274fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af6b51f88c370d72688ba4d683581b66 = $(`<div id="html_af6b51f88c370d72688ba4d683581b66" style="width: 100.0%; height: 100.0%;">Cashew<br>Type: MRT<br>Nearest station: Hillview<br>Nearest distance: 0.819 km</div>`)[0];
+                popup_a53fb4333b64998982ca6e64b9a274fc.setContent(html_af6b51f88c370d72688ba4d683581b66);
+            
+        
+
+        circle_marker_9b1540b9b3e3fd5633a05a9014f66750.bindPopup(popup_a53fb4333b64998982ca6e64b9a274fc)
+        ;
+
+        
+    
+    
+            var circle_marker_688f20b649f4fc880847d02abdae7d3a = L.circleMarker(
+                [1.363185, 103.767371],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_665ef42bdeab57801c9ee6f47539a724 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b09d9e206b3b76608ab22b5b55152cbd = $(`<div id="html_b09d9e206b3b76608ab22b5b55152cbd" style="width: 100.0%; height: 100.0%;">Hillview<br>Type: MRT<br>Nearest station: Cashew<br>Nearest distance: 0.819 km</div>`)[0];
+                popup_665ef42bdeab57801c9ee6f47539a724.setContent(html_b09d9e206b3b76608ab22b5b55152cbd);
+            
+        
+
+        circle_marker_688f20b649f4fc880847d02abdae7d3a.bindPopup(popup_665ef42bdeab57801c9ee6f47539a724)
+        ;
+
+        
+    
+    
+            var circle_marker_60ec1f6f8e0a8d0b9cd91e7fdbcf00c9 = L.circleMarker(
+                [1.341607, 103.775682],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7486bedff5660af6bff4ad7d2042beb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_019d011638fef5d36e2d177de1f04c51 = $(`<div id="html_019d011638fef5d36e2d177de1f04c51" style="width: 100.0%; height: 100.0%;">Beauty World<br>Type: MRT<br>Nearest station: King Albert Park<br>Nearest distance: 1.062 km</div>`)[0];
+                popup_7486bedff5660af6bff4ad7d2042beb7.setContent(html_019d011638fef5d36e2d177de1f04c51);
+            
+        
+
+        circle_marker_60ec1f6f8e0a8d0b9cd91e7fdbcf00c9.bindPopup(popup_7486bedff5660af6bff4ad7d2042beb7)
+        ;
+
+        
+    
+    
+            var circle_marker_61e3cf56882a44002b8df9005aeb558f = L.circleMarker(
+                [1.335721, 103.783203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_777d6b7aa94af9ec32396230d9cae606 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1da9290ecf414cb03445508e90a1a17 = $(`<div id="html_b1da9290ecf414cb03445508e90a1a17" style="width: 100.0%; height: 100.0%;">King Albert Park<br>Type: MRT<br>Nearest station: Beauty World<br>Nearest distance: 1.062 km</div>`)[0];
+                popup_777d6b7aa94af9ec32396230d9cae606.setContent(html_b1da9290ecf414cb03445508e90a1a17);
+            
+        
+
+        circle_marker_61e3cf56882a44002b8df9005aeb558f.bindPopup(popup_777d6b7aa94af9ec32396230d9cae606)
+        ;
+
+        
+    
+    
+            var circle_marker_0a464082983d3dbbb976462c201e9c9a = L.circleMarker(
+                [1.331221, 103.79718],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_31614566bdda81f2bbea24171b9de499 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_807795fdf2af6f0f6af56babfb932985 = $(`<div id="html_807795fdf2af6f0f6af56babfb932985" style="width: 100.0%; height: 100.0%;">Sixth Avenue<br>Type: MRT<br>Nearest station: Tan Kah Kee<br>Nearest distance: 1.340 km</div>`)[0];
+                popup_31614566bdda81f2bbea24171b9de499.setContent(html_807795fdf2af6f0f6af56babfb932985);
+            
+        
+
+        circle_marker_0a464082983d3dbbb976462c201e9c9a.bindPopup(popup_31614566bdda81f2bbea24171b9de499)
+        ;
+
+        
+    
+    
+            var circle_marker_39a5e7e1ff81dfa69917a443c74f681a = L.circleMarker(
+                [1.325826, 103.807959],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7b391b02a54bd19c28a71e2f6053e6df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e932290eca2ef601d5312fa813de96d = $(`<div id="html_8e932290eca2ef601d5312fa813de96d" style="width: 100.0%; height: 100.0%;">Tan Kah Kee<br>Type: MRT<br>Nearest station: Botanic Gardens<br>Nearest distance: 0.862 km</div>`)[0];
+                popup_7b391b02a54bd19c28a71e2f6053e6df.setContent(html_8e932290eca2ef601d5312fa813de96d);
+            
+        
+
+        circle_marker_39a5e7e1ff81dfa69917a443c74f681a.bindPopup(popup_7b391b02a54bd19c28a71e2f6053e6df)
+        ;
+
+        
+    
+    
+            var circle_marker_b3d95a73e7bb4329146b37ab9dd380ae = L.circleMarker(
+                [1.320012, 103.825964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_34074be21a3b5269c3ac2fc8959a9633 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe9bd5660e0587728ab801c5943d033d = $(`<div id="html_fe9bd5660e0587728ab801c5943d033d" style="width: 100.0%; height: 100.0%;">Stevens<br>Type: MRT<br>Nearest station: Botanic Gardens<br>Nearest distance: 1.257 km</div>`)[0];
+                popup_34074be21a3b5269c3ac2fc8959a9633.setContent(html_fe9bd5660e0587728ab801c5943d033d);
+            
+        
+
+        circle_marker_b3d95a73e7bb4329146b37ab9dd380ae.bindPopup(popup_34074be21a3b5269c3ac2fc8959a9633)
+        ;
+
+        
+    
+    
+            var circle_marker_7119d8782882d1af8feb9dff6fb897ea = L.circleMarker(
+                [1.303601, 103.852581],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f3177084875bed92585e72ff50c27aba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0bdb3b62bc45178f3cbb7d5a1c7c0173 = $(`<div id="html_0bdb3b62bc45178f3cbb7d5a1c7c0173" style="width: 100.0%; height: 100.0%;">Rochor<br>Type: MRT<br>Nearest station: Jalan Besar<br>Nearest distance: 0.385 km</div>`)[0];
+                popup_f3177084875bed92585e72ff50c27aba.setContent(html_0bdb3b62bc45178f3cbb7d5a1c7c0173);
+            
+        
+
+        circle_marker_7119d8782882d1af8feb9dff6fb897ea.bindPopup(popup_f3177084875bed92585e72ff50c27aba)
+        ;
+
+        
+    
+    
+            var circle_marker_4c0f416e6c91e2c213eba32f932c3d72 = L.circleMarker(
+                [1.27949, 103.852802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_695c2275fd5d69f5e8424fbbdab26f06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9aa05b323df7ac3b0385549834453f8 = $(`<div id="html_c9aa05b323df7ac3b0385549834453f8" style="width: 100.0%; height: 100.0%;">Downtown<br>Type: MRT<br>Nearest station: Marina Bay<br>Nearest distance: 0.390 km</div>`)[0];
+                popup_695c2275fd5d69f5e8424fbbdab26f06.setContent(html_c9aa05b323df7ac3b0385549834453f8);
+            
+        
+
+        circle_marker_4c0f416e6c91e2c213eba32f932c3d72.bindPopup(popup_695c2275fd5d69f5e8424fbbdab26f06)
+        ;
+
+        
+    
+    
+            var circle_marker_487736311e445b535188e2a6b1673843 = L.circleMarker(
+                [1.282285, 103.848584],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_3208668ebd5cff6f8b6b28a01ff852e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de836ff5a579cd77291a63703ec34287 = $(`<div id="html_de836ff5a579cd77291a63703ec34287" style="width: 100.0%; height: 100.0%;">Telok Ayer<br>Type: MRT<br>Nearest station: Raffles Place<br>Nearest distance: 0.381 km</div>`)[0];
+                popup_3208668ebd5cff6f8b6b28a01ff852e3.setContent(html_de836ff5a579cd77291a63703ec34287);
+            
+        
+
+        circle_marker_487736311e445b535188e2a6b1673843.bindPopup(popup_3208668ebd5cff6f8b6b28a01ff852e3)
+        ;
+
+        
+    
+    
+            var circle_marker_3a65b1615a60a9efd95767cf16c7c88c = L.circleMarker(
+                [1.291631, 103.844621],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f82fd9be8184ea9fff7ab5daa8e002c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42244fd434dbc84edbbe947c3d4889b8 = $(`<div id="html_42244fd434dbc84edbbe947c3d4889b8" style="width: 100.0%; height: 100.0%;">Fort Canning<br>Type: MRT<br>Nearest station: Clarke Quay<br>Nearest distance: 0.439 km</div>`)[0];
+                popup_f82fd9be8184ea9fff7ab5daa8e002c2.setContent(html_42244fd434dbc84edbbe947c3d4889b8);
+            
+        
+
+        circle_marker_3a65b1615a60a9efd95767cf16c7c88c.bindPopup(popup_f82fd9be8184ea9fff7ab5daa8e002c2)
+        ;
+
+        
+    
+    
+            var circle_marker_cdb47a2895a23328d81bccf9d57df2b3 = L.circleMarker(
+                [1.298477, 103.849984],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_74b949e388c4f0ec4a12e3809e54bcaa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57bb7535b765595135b7bc507a7f2d2a = $(`<div id="html_57bb7535b765595135b7bc507a7f2d2a" style="width: 100.0%; height: 100.0%;">Bencoolen<br>Type: MRT<br>Nearest station: Bras Basah<br>Nearest distance: 0.185 km</div>`)[0];
+                popup_74b949e388c4f0ec4a12e3809e54bcaa.setContent(html_57bb7535b765595135b7bc507a7f2d2a);
+            
+        
+
+        circle_marker_cdb47a2895a23328d81bccf9d57df2b3.bindPopup(popup_74b949e388c4f0ec4a12e3809e54bcaa)
+        ;
+
+        
+    
+    
+            var circle_marker_ca4b73483ebe3cc0988742f03759c173 = L.circleMarker(
+                [1.305551, 103.855443],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_75d6ee20492ad13a25467401d0ab8379 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47ac3cb72f18a2d5257425c68c1588b8 = $(`<div id="html_47ac3cb72f18a2d5257425c68c1588b8" style="width: 100.0%; height: 100.0%;">Jalan Besar<br>Type: MRT<br>Nearest station: Rochor<br>Nearest distance: 0.385 km</div>`)[0];
+                popup_75d6ee20492ad13a25467401d0ab8379.setContent(html_47ac3cb72f18a2d5257425c68c1588b8);
+            
+        
+
+        circle_marker_ca4b73483ebe3cc0988742f03759c173.bindPopup(popup_75d6ee20492ad13a25467401d0ab8379)
+        ;
+
+        
+    
+    
+            var circle_marker_b9d15338235cb3fb3343784722c31c09 = L.circleMarker(
+                [1.313674, 103.863098],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_a7f2c00d6ba5e3b49ab2754c5af9e1f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c561287c9c09aee3f96a43ec035bf670 = $(`<div id="html_c561287c9c09aee3f96a43ec035bf670" style="width: 100.0%; height: 100.0%;">Bendemeer<br>Type: MRT<br>Nearest station: Lavender<br>Nearest distance: 0.678 km</div>`)[0];
+                popup_a7f2c00d6ba5e3b49ab2754c5af9e1f3.setContent(html_c561287c9c09aee3f96a43ec035bf670);
+            
+        
+
+        circle_marker_b9d15338235cb3fb3343784722c31c09.bindPopup(popup_a7f2c00d6ba5e3b49ab2754c5af9e1f3)
+        ;
+
+        
+    
+    
+            var circle_marker_dfa6c81b4d71fb129db735b38c26d1a3 = L.circleMarker(
+                [1.321479, 103.871457],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_51867a9307a08ae67b4171b4a8a4acfa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40aea1d2c4c1b32ee652d084108f90a2 = $(`<div id="html_40aea1d2c4c1b32ee652d084108f90a2" style="width: 100.0%; height: 100.0%;">Geylang Bahru<br>Type: MRT<br>Nearest station: Boon Keng<br>Nearest distance: 1.101 km</div>`)[0];
+                popup_51867a9307a08ae67b4171b4a8a4acfa.setContent(html_40aea1d2c4c1b32ee652d084108f90a2);
+            
+        
+
+        circle_marker_dfa6c81b4d71fb129db735b38c26d1a3.bindPopup(popup_51867a9307a08ae67b4171b4a8a4acfa)
+        ;
+
+        
+    
+    
+            var circle_marker_2efd6ab87e4c122e7bd2830db8dcb6a4 = L.circleMarker(
+                [1.326878, 103.883304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_df2da0e5424202e4b6c752d68ee08577 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d55bd32c249b0fcbe5b0c4b2a5efe33d = $(`<div id="html_d55bd32c249b0fcbe5b0c4b2a5efe33d" style="width: 100.0%; height: 100.0%;">Mattar<br>Type: MRT<br>Nearest station: MacPherson<br>Nearest distance: 0.733 km</div>`)[0];
+                popup_df2da0e5424202e4b6c752d68ee08577.setContent(html_d55bd32c249b0fcbe5b0c4b2a5efe33d);
+            
+        
+
+        circle_marker_2efd6ab87e4c122e7bd2830db8dcb6a4.bindPopup(popup_df2da0e5424202e4b6c752d68ee08577)
+        ;
+
+        
+    
+    
+            var circle_marker_8e97bec7df01b145faf160585717bdcf = L.circleMarker(
+                [1.330008, 103.898911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_b31618f835a818fc11b9a4483d8a293e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1541ae88d3d8157bdfe4450105141371 = $(`<div id="html_1541ae88d3d8157bdfe4450105141371" style="width: 100.0%; height: 100.0%;">Ubi<br>Type: MRT<br>Nearest station: MacPherson<br>Nearest distance: 1.064 km</div>`)[0];
+                popup_b31618f835a818fc11b9a4483d8a293e.setContent(html_1541ae88d3d8157bdfe4450105141371);
+            
+        
+
+        circle_marker_8e97bec7df01b145faf160585717bdcf.bindPopup(popup_b31618f835a818fc11b9a4483d8a293e)
+        ;
+
+        
+    
+    
+            var circle_marker_229d489f0a9a8b94ce2173b2395edf75 = L.circleMarker(
+                [1.335076, 103.909057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_47a4e00b2e87343add0b81a745ad5b4c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e084ba86bd1aa7175795f9b2c452b07 = $(`<div id="html_4e084ba86bd1aa7175795f9b2c452b07" style="width: 100.0%; height: 100.0%;">Kaki Bukit<br>Type: MRT<br>Nearest station: Bedok North<br>Nearest distance: 1.000 km</div>`)[0];
+                popup_47a4e00b2e87343add0b81a745ad5b4c.setContent(html_4e084ba86bd1aa7175795f9b2c452b07);
+            
+        
+
+        circle_marker_229d489f0a9a8b94ce2173b2395edf75.bindPopup(popup_47a4e00b2e87343add0b81a745ad5b4c)
+        ;
+
+        
+    
+    
+            var circle_marker_4e60be74b1b9263bf0e1f8f90250ed73 = L.circleMarker(
+                [1.335268, 103.918054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_4fa04cf32fd445aeb3bb7061e4520fd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85005a61f778423ca9962bc26bb545f7 = $(`<div id="html_85005a61f778423ca9962bc26bb545f7" style="width: 100.0%; height: 100.0%;">Bedok North<br>Type: MRT<br>Nearest station: Kaki Bukit<br>Nearest distance: 1.000 km</div>`)[0];
+                popup_4fa04cf32fd445aeb3bb7061e4520fd8.setContent(html_85005a61f778423ca9962bc26bb545f7);
+            
+        
+
+        circle_marker_4e60be74b1b9263bf0e1f8f90250ed73.bindPopup(popup_4fa04cf32fd445aeb3bb7061e4520fd8)
+        ;
+
+        
+    
+    
+            var circle_marker_09dd36190e5386ce33e08128a0f31110 = L.circleMarker(
+                [1.336595, 103.93307],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_0bd6bb359d12846ac01fbab60a4829b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d294c47405b7d9d75ed964b8e9db2dde = $(`<div id="html_d294c47405b7d9d75ed964b8e9db2dde" style="width: 100.0%; height: 100.0%;">Bedok Reservoir<br>Type: MRT<br>Nearest station: Tampines West<br>Nearest distance: 1.153 km</div>`)[0];
+                popup_0bd6bb359d12846ac01fbab60a4829b0.setContent(html_d294c47405b7d9d75ed964b8e9db2dde);
+            
+        
+
+        circle_marker_09dd36190e5386ce33e08128a0f31110.bindPopup(popup_0bd6bb359d12846ac01fbab60a4829b0)
+        ;
+
+        
+    
+    
+            var circle_marker_c81d7b9d11fbc3729ffb437371fa4ec6 = L.circleMarker(
+                [1.345583, 103.938244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_5c03855261986c7d0dbe1ca389537522 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63182994d78e6fd9aac57c8749ce7fd6 = $(`<div id="html_63182994d78e6fd9aac57c8749ce7fd6" style="width: 100.0%; height: 100.0%;">Tampines West<br>Type: MRT<br>Nearest station: Tampines<br>Nearest distance: 1.138 km</div>`)[0];
+                popup_5c03855261986c7d0dbe1ca389537522.setContent(html_63182994d78e6fd9aac57c8749ce7fd6);
+            
+        
+
+        circle_marker_c81d7b9d11fbc3729ffb437371fa4ec6.bindPopup(popup_5c03855261986c7d0dbe1ca389537522)
+        ;
+
+        
+    
+    
+            var circle_marker_bbc8b00ddd14787bd90341e484ca6e63 = L.circleMarker(
+                [1.35631, 103.955471],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_9318d23085ea81eae3239221330cefc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55e9174beb5b0c08b5f04db7c812cae0 = $(`<div id="html_55e9174beb5b0c08b5f04db7c812cae0" style="width: 100.0%; height: 100.0%;">Tampines East<br>Type: MRT<br>Nearest station: Tampines<br>Nearest distance: 1.366 km</div>`)[0];
+                popup_9318d23085ea81eae3239221330cefc4.setContent(html_55e9174beb5b0c08b5f04db7c812cae0);
+            
+        
+
+        circle_marker_bbc8b00ddd14787bd90341e484ca6e63.bindPopup(popup_9318d23085ea81eae3239221330cefc4)
+        ;
+
+        
+    
+    
+            var circle_marker_47622d15a9ff179858594184aaf69740 = L.circleMarker(
+                [1.342218, 103.961505],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_44bc34a8b23cbadd18c8ac6a8c59856d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aacec23cbb3be1c8e8256cce42236780 = $(`<div id="html_aacec23cbb3be1c8e8256cce42236780" style="width: 100.0%; height: 100.0%;">Upper Changi<br>Type: MRT<br>Nearest station: Expo<br>Nearest distance: 0.861 km</div>`)[0];
+                popup_44bc34a8b23cbadd18c8ac6a8c59856d.setContent(html_aacec23cbb3be1c8e8256cce42236780);
+            
+        
+
+        circle_marker_47622d15a9ff179858594184aaf69740.bindPopup(popup_44bc34a8b23cbadd18c8ac6a8c59856d)
+        ;
+
+        
+    
+    
+            var circle_marker_721878866bd2c5ea9faace2d45110515 = L.circleMarker(
+                [1.380299, 103.745286],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_0fae14354ed8ba36ca54219b153d0a2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d193645f6358e0ccdf7729b75ba9ef23 = $(`<div id="html_d193645f6358e0ccdf7729b75ba9ef23" style="width: 100.0%; height: 100.0%;">South View<br>Type: LRT<br>Nearest station: Keat Hong<br>Nearest distance: 0.460 km</div>`)[0];
+                popup_0fae14354ed8ba36ca54219b153d0a2f.setContent(html_d193645f6358e0ccdf7729b75ba9ef23);
+            
+        
+
+        circle_marker_721878866bd2c5ea9faace2d45110515.bindPopup(popup_0fae14354ed8ba36ca54219b153d0a2f)
+        ;
+
+        
+    
+    
+            var circle_marker_8c61ef6178594553bd5aa3cc43bb9297 = L.circleMarker(
+                [1.378604, 103.749058],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_ae4d3565f3c18657d9e6e313c95d3a74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7359fe4245d820cd76819192ecaf07c = $(`<div id="html_d7359fe4245d820cd76819192ecaf07c" style="width: 100.0%; height: 100.0%;">Keat Hong<br>Type: LRT<br>Nearest station: South View<br>Nearest distance: 0.460 km</div>`)[0];
+                popup_ae4d3565f3c18657d9e6e313c95d3a74.setContent(html_d7359fe4245d820cd76819192ecaf07c);
+            
+        
+
+        circle_marker_8c61ef6178594553bd5aa3cc43bb9297.bindPopup(popup_ae4d3565f3c18657d9e6e313c95d3a74)
+        ;
+
+        
+    
+    
+            var circle_marker_eb722300579c2c7d9a15b17a390da07d = L.circleMarker(
+                [1.376738, 103.753665],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_3a4a575a79a16a7823d53e0cc66bfaa8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7a8d2628b3483b319e1fd3d1f3dc185 = $(`<div id="html_e7a8d2628b3483b319e1fd3d1f3dc185" style="width: 100.0%; height: 100.0%;">Teck Whye<br>Type: LRT<br>Nearest station: Phoenix<br>Nearest distance: 0.536 km</div>`)[0];
+                popup_3a4a575a79a16a7823d53e0cc66bfaa8.setContent(html_e7a8d2628b3483b319e1fd3d1f3dc185);
+            
+        
+
+        circle_marker_eb722300579c2c7d9a15b17a390da07d.bindPopup(popup_3a4a575a79a16a7823d53e0cc66bfaa8)
+        ;
+
+        
+    
+    
+            var circle_marker_cb79bcf0290e86cab5e90a6fcd18335a = L.circleMarker(
+                [1.378798, 103.758021],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e8c465d1e6d1f44697636699e5f7f228 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_081f282497a44d631e7370e5d6bbc191 = $(`<div id="html_081f282497a44d631e7370e5d6bbc191" style="width: 100.0%; height: 100.0%;">Phoenix<br>Type: LRT<br>Nearest station: Bukit Panjang<br>Nearest distance: 0.495 km</div>`)[0];
+                popup_e8c465d1e6d1f44697636699e5f7f228.setContent(html_081f282497a44d631e7370e5d6bbc191);
+            
+        
+
+        circle_marker_cb79bcf0290e86cab5e90a6fcd18335a.bindPopup(popup_e8c465d1e6d1f44697636699e5f7f228)
+        ;
+
+        
+    
+    
+            var circle_marker_14158f1aa0411c2ba67eb35fb82f0621 = L.circleMarker(
+                [1.382852, 103.762312],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_46a2c7f573d04dfe4d162330bc6077ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_524d4cd86c5ce5d7fd1bd7a778d9350d = $(`<div id="html_524d4cd86c5ce5d7fd1bd7a778d9350d" style="width: 100.0%; height: 100.0%;">Senja<br>Type: LRT<br>Nearest station: Jelapang<br>Nearest distance: 0.495 km</div>`)[0];
+                popup_46a2c7f573d04dfe4d162330bc6077ca.setContent(html_524d4cd86c5ce5d7fd1bd7a778d9350d);
+            
+        
+
+        circle_marker_14158f1aa0411c2ba67eb35fb82f0621.bindPopup(popup_46a2c7f573d04dfe4d162330bc6077ca)
+        ;
+
+        
+    
+    
+            var circle_marker_bf6936f0ab04d3642f25636653bb360f = L.circleMarker(
+                [1.386703, 103.764547],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_9d0f8d8ee84ef71d9f17e9b6a9fb0287 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21fa77054ed4f6fdf8bdc014968cee8b = $(`<div id="html_21fa77054ed4f6fdf8bdc014968cee8b" style="width: 100.0%; height: 100.0%;">Jelapang<br>Type: LRT<br>Nearest station: Senja<br>Nearest distance: 0.495 km</div>`)[0];
+                popup_9d0f8d8ee84ef71d9f17e9b6a9fb0287.setContent(html_21fa77054ed4f6fdf8bdc014968cee8b);
+            
+        
+
+        circle_marker_bf6936f0ab04d3642f25636653bb360f.bindPopup(popup_9d0f8d8ee84ef71d9f17e9b6a9fb0287)
+        ;
+
+        
+    
+    
+            var circle_marker_774fa04ed8164e3c97140dd35c971593 = L.circleMarker(
+                [1.387713, 103.769599],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_82dd63a2387df7f0aa9a8c569a9163ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d37e49c1224bdf5be381756e291533aa = $(`<div id="html_d37e49c1224bdf5be381756e291533aa" style="width: 100.0%; height: 100.0%;">Segar<br>Type: LRT<br>Nearest station: Fajar<br>Nearest distance: 0.384 km</div>`)[0];
+                popup_82dd63a2387df7f0aa9a8c569a9163ce.setContent(html_d37e49c1224bdf5be381756e291533aa);
+            
+        
+
+        circle_marker_774fa04ed8164e3c97140dd35c971593.bindPopup(popup_82dd63a2387df7f0aa9a8c569a9163ce)
+        ;
+
+        
+    
+    
+            var circle_marker_201008d957e7cd81b7cc7d1ceea39fe6 = L.circleMarker(
+                [1.384502, 103.770862],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_32ebcd13dc93a2b354b10e511d97780a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f88e0ec26cb5a7e009d26a561aeae795 = $(`<div id="html_f88e0ec26cb5a7e009d26a561aeae795" style="width: 100.0%; height: 100.0%;">Fajar<br>Type: LRT<br>Nearest station: Segar<br>Nearest distance: 0.384 km</div>`)[0];
+                popup_32ebcd13dc93a2b354b10e511d97780a.setContent(html_f88e0ec26cb5a7e009d26a561aeae795);
+            
+        
+
+        circle_marker_201008d957e7cd81b7cc7d1ceea39fe6.bindPopup(popup_32ebcd13dc93a2b354b10e511d97780a)
+        ;
+
+        
+    
+    
+            var circle_marker_08e18dde2ef42bc1e4641f1f74016111 = L.circleMarker(
+                [1.380281, 103.772576],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7b1287813748f843a593f16f6b50e948 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36052357256b708210131c6154fcc65a = $(`<div id="html_36052357256b708210131c6154fcc65a" style="width: 100.0%; height: 100.0%;">Bangkit<br>Type: LRT<br>Nearest station: Pending<br>Nearest distance: 0.474 km</div>`)[0];
+                popup_7b1287813748f843a593f16f6b50e948.setContent(html_36052357256b708210131c6154fcc65a);
+            
+        
+
+        circle_marker_08e18dde2ef42bc1e4641f1f74016111.bindPopup(popup_7b1287813748f843a593f16f6b50e948)
+        ;
+
+        
+    
+    
+            var circle_marker_078b5e7ff199284bf946d4cfeebe300f = L.circleMarker(
+                [1.376223, 103.771277],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_1f3b2d44c3c828c53813dea05cd0e855 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73857ac64a1fa42b2dea9cb9ad9c55ac = $(`<div id="html_73857ac64a1fa42b2dea9cb9ad9c55ac" style="width: 100.0%; height: 100.0%;">Pending<br>Type: LRT<br>Nearest station: Bangkit<br>Nearest distance: 0.474 km</div>`)[0];
+                popup_1f3b2d44c3c828c53813dea05cd0e855.setContent(html_73857ac64a1fa42b2dea9cb9ad9c55ac);
+            
+        
+
+        circle_marker_078b5e7ff199284bf946d4cfeebe300f.bindPopup(popup_1f3b2d44c3c828c53813dea05cd0e855)
+        ;
+
+        
+    
+    
+            var circle_marker_9d4b6372c4b1324e4ed3339d00f73e3d = L.circleMarker(
+                [1.377828, 103.76655],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e584ecaca897143b82dea5dd5e2bc56a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_294e8c1767b5c998c01af3595cd0224a = $(`<div id="html_294e8c1767b5c998c01af3595cd0224a" style="width: 100.0%; height: 100.0%;">Petir<br>Type: LRT<br>Nearest station: Bukit Panjang<br>Nearest distance: 0.459 km</div>`)[0];
+                popup_e584ecaca897143b82dea5dd5e2bc56a.setContent(html_294e8c1767b5c998c01af3595cd0224a);
+            
+        
+
+        circle_marker_9d4b6372c4b1324e4ed3339d00f73e3d.bindPopup(popup_e584ecaca897143b82dea5dd5e2bc56a)
+        ;
+
+        
+    
+    
+            var circle_marker_0d4b131b97bd5de6dc2c786d67919609 = L.circleMarker(
+                [1.394615, 103.900443],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_c4e6a45ca0712bae3440f2472e728098 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a62af40f36713706eb69aa6136756d84 = $(`<div id="html_a62af40f36713706eb69aa6136756d84" style="width: 100.0%; height: 100.0%;">Compassvale<br>Type: LRT<br>Nearest station: Sengkang<br>Nearest distance: 0.641 km</div>`)[0];
+                popup_c4e6a45ca0712bae3440f2472e728098.setContent(html_a62af40f36713706eb69aa6136756d84);
+            
+        
+
+        circle_marker_0d4b131b97bd5de6dc2c786d67919609.bindPopup(popup_c4e6a45ca0712bae3440f2472e728098)
+        ;
+
+        
+    
+    
+            var circle_marker_56d1d2956acc00ff24ae78be0191c44b = L.circleMarker(
+                [1.391553, 103.905947],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_00714557d1332d35ea43092b1c067222 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07e8129d95dcf7b62992b69eb8ee1a75 = $(`<div id="html_07e8129d95dcf7b62992b69eb8ee1a75" style="width: 100.0%; height: 100.0%;">Rumbia<br>Type: LRT<br>Nearest station: Bakau<br>Nearest distance: 0.395 km</div>`)[0];
+                popup_00714557d1332d35ea43092b1c067222.setContent(html_07e8129d95dcf7b62992b69eb8ee1a75);
+            
+        
+
+        circle_marker_56d1d2956acc00ff24ae78be0191c44b.bindPopup(popup_00714557d1332d35ea43092b1c067222)
+        ;
+
+        
+    
+    
+            var circle_marker_a733518dd484a7937920a552c04aa8bd = L.circleMarker(
+                [1.38804, 103.905412],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d2bab108dc5861fc178fce0a2076d87b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cfcaeb00a3cf261efc6c39ac671a05c = $(`<div id="html_1cfcaeb00a3cf261efc6c39ac671a05c" style="width: 100.0%; height: 100.0%;">Bakau<br>Type: LRT<br>Nearest station: Rumbia<br>Nearest distance: 0.395 km</div>`)[0];
+                popup_d2bab108dc5861fc178fce0a2076d87b.setContent(html_1cfcaeb00a3cf261efc6c39ac671a05c);
+            
+        
+
+        circle_marker_a733518dd484a7937920a552c04aa8bd.bindPopup(popup_d2bab108dc5861fc178fce0a2076d87b)
+        ;
+
+        
+    
+    
+            var circle_marker_29ab9d7a7d8f4d907e449dd6e41c83cd = L.circleMarker(
+                [1.383957, 103.90216],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_11e623b441c5e492a4a48cd82a3c23d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a520e06cc89dea0aa2c64a49392cf01 = $(`<div id="html_9a520e06cc89dea0aa2c64a49392cf01" style="width: 100.0%; height: 100.0%;">Kangkar<br>Type: LRT<br>Nearest station: Ranggung<br>Nearest distance: 0.531 km</div>`)[0];
+                popup_11e623b441c5e492a4a48cd82a3c23d1.setContent(html_9a520e06cc89dea0aa2c64a49392cf01);
+            
+        
+
+        circle_marker_29ab9d7a7d8f4d907e449dd6e41c83cd.bindPopup(popup_11e623b441c5e492a4a48cd82a3c23d1)
+        ;
+
+        
+    
+    
+            var circle_marker_9e5bb848f5a330656fbadc2e065f14ad = L.circleMarker(
+                [1.384116, 103.897386],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_39c9f5ab3ebc62b29cb840e6ae10fdc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d3b6d31a9b620109c4bc4472cd045eb = $(`<div id="html_9d3b6d31a9b620109c4bc4472cd045eb" style="width: 100.0%; height: 100.0%;">Ranggung<br>Type: LRT<br>Nearest station: Buangkok<br>Nearest distance: 0.466 km</div>`)[0];
+                popup_39c9f5ab3ebc62b29cb840e6ae10fdc3.setContent(html_9d3b6d31a9b620109c4bc4472cd045eb);
+            
+        
+
+        circle_marker_9e5bb848f5a330656fbadc2e065f14ad.bindPopup(popup_39c9f5ab3ebc62b29cb840e6ae10fdc3)
+        ;
+
+        
+    
+    
+            var circle_marker_24dfd5d4db61f6a81d6dc1df21e7d146 = L.circleMarker(
+                [1.396332, 103.89379],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_c0d08fb96d629bb3773d4d9e1b5347b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32e0ead5b5fc3758e574aabc691b6d2b = $(`<div id="html_32e0ead5b5fc3758e574aabc691b6d2b" style="width: 100.0%; height: 100.0%;">Cheng Lim<br>Type: LRT<br>Nearest station: Farmway<br>Nearest distance: 0.522 km</div>`)[0];
+                popup_c0d08fb96d629bb3773d4d9e1b5347b4.setContent(html_32e0ead5b5fc3758e574aabc691b6d2b);
+            
+        
+
+        circle_marker_24dfd5d4db61f6a81d6dc1df21e7d146.bindPopup(popup_c0d08fb96d629bb3773d4d9e1b5347b4)
+        ;
+
+        
+    
+    
+            var circle_marker_40decf3d5c4e2dca9d1833f7db00db50 = L.circleMarker(
+                [1.397178, 103.889168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d17ef905c8e53989d0d5d03a70409330 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23092d289d38de1d9232b029744f82ba = $(`<div id="html_23092d289d38de1d9232b029744f82ba" style="width: 100.0%; height: 100.0%;">Farmway<br>Type: LRT<br>Nearest station: Cheng Lim<br>Nearest distance: 0.522 km</div>`)[0];
+                popup_d17ef905c8e53989d0d5d03a70409330.setContent(html_23092d289d38de1d9232b029744f82ba);
+            
+        
+
+        circle_marker_40decf3d5c4e2dca9d1833f7db00db50.bindPopup(popup_d17ef905c8e53989d0d5d03a70409330)
+        ;
+
+        
+    
+    
+            var circle_marker_99f977b93fbdc7e50c709d192b0aa4cb = L.circleMarker(
+                [1.398271, 103.881283],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_778abcfbeedc0b9599af357b86f1ce05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69a791a63a59dbfc073d0eed8fd69e99 = $(`<div id="html_69a791a63a59dbfc073d0eed8fd69e99" style="width: 100.0%; height: 100.0%;">Kupang<br>Type: LRT<br>Nearest station: Thanggam<br>Nearest distance: 0.638 km</div>`)[0];
+                popup_778abcfbeedc0b9599af357b86f1ce05.setContent(html_69a791a63a59dbfc073d0eed8fd69e99);
+            
+        
+
+        circle_marker_99f977b93fbdc7e50c709d192b0aa4cb.bindPopup(popup_778abcfbeedc0b9599af357b86f1ce05)
+        ;
+
+        
+    
+    
+            var circle_marker_35c446ea89a2380e35eb48b711d8dfd4 = L.circleMarker(
+                [1.397378, 103.87561],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_6932a596c7249b3592b3fcdb1d5e8727 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03f12368fbab15e08b9e27f3129fdbfc = $(`<div id="html_03f12368fbab15e08b9e27f3129fdbfc" style="width: 100.0%; height: 100.0%;">Thanggam<br>Type: LRT<br>Nearest station: Fernvale<br>Nearest distance: 0.599 km</div>`)[0];
+                popup_6932a596c7249b3592b3fcdb1d5e8727.setContent(html_03f12368fbab15e08b9e27f3129fdbfc);
+            
+        
+
+        circle_marker_35c446ea89a2380e35eb48b711d8dfd4.bindPopup(popup_6932a596c7249b3592b3fcdb1d5e8727)
+        ;
+
+        
+    
+    
+            var circle_marker_53adb8f4a79d2e21f70ac747e7873d1e = L.circleMarker(
+                [1.392033, 103.876256],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_eba9f4efb5167934e8f11af15f78a28f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6cdb8a720f8e17d7d435dd49e8d5ab0 = $(`<div id="html_c6cdb8a720f8e17d7d435dd49e8d5ab0" style="width: 100.0%; height: 100.0%;">Fernvale<br>Type: LRT<br>Nearest station: Layar<br>Nearest distance: 0.419 km</div>`)[0];
+                popup_eba9f4efb5167934e8f11af15f78a28f.setContent(html_c6cdb8a720f8e17d7d435dd49e8d5ab0);
+            
+        
+
+        circle_marker_53adb8f4a79d2e21f70ac747e7873d1e.bindPopup(popup_eba9f4efb5167934e8f11af15f78a28f)
+        ;
+
+        
+    
+    
+            var circle_marker_163192a8cf8cfd0daf74a046e71c42d4 = L.circleMarker(
+                [1.392141, 103.880022],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_b094ff0938ebf25beb825d4cf4a8f497 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac242d952cf1485f6d77e6d1e9c98929 = $(`<div id="html_ac242d952cf1485f6d77e6d1e9c98929" style="width: 100.0%; height: 100.0%;">Layar<br>Type: LRT<br>Nearest station: Fernvale<br>Nearest distance: 0.419 km</div>`)[0];
+                popup_b094ff0938ebf25beb825d4cf4a8f497.setContent(html_ac242d952cf1485f6d77e6d1e9c98929);
+            
+        
+
+        circle_marker_163192a8cf8cfd0daf74a046e71c42d4.bindPopup(popup_b094ff0938ebf25beb825d4cf4a8f497)
+        ;
+
+        
+    
+    
+            var circle_marker_1bb528f23e509ff0c60c2b1674cccb40 = L.circleMarker(
+                [1.389519, 103.885829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_1d3019d30d463c514e72373ca7ccf4a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14e1cb4d5152ababdfc39a2362a6ccd2 = $(`<div id="html_14e1cb4d5152ababdfc39a2362a6ccd2" style="width: 100.0%; height: 100.0%;">Tongkang<br>Type: LRT<br>Nearest station: Renjong<br>Nearest distance: 0.603 km</div>`)[0];
+                popup_1d3019d30d463c514e72373ca7ccf4a2.setContent(html_14e1cb4d5152ababdfc39a2362a6ccd2);
+            
+        
+
+        circle_marker_1bb528f23e509ff0c60c2b1674cccb40.bindPopup(popup_1d3019d30d463c514e72373ca7ccf4a2)
+        ;
+
+        
+    
+    
+            var circle_marker_918d59cda7eea869e2258de1fd227e66 = L.circleMarker(
+                [1.386827, 103.890541],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d2e84ef5e6f6868853a2ffadac6a3eeb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2715dfabdda341432b318352e1b0356c = $(`<div id="html_2715dfabdda341432b318352e1b0356c" style="width: 100.0%; height: 100.0%;">Renjong<br>Type: LRT<br>Nearest station: Buangkok<br>Nearest distance: 0.528 km</div>`)[0];
+                popup_d2e84ef5e6f6868853a2ffadac6a3eeb.setContent(html_2715dfabdda341432b318352e1b0356c);
+            
+        
+
+        circle_marker_918d59cda7eea869e2258de1fd227e66.bindPopup(popup_d2e84ef5e6f6868853a2ffadac6a3eeb)
+        ;
+
+        
+    
+    
+            var circle_marker_4e0f68ab8bf8ff0a039c50c5d5c45a25 = L.circleMarker(
+                [1.399534, 103.905792],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_6a0d0cb427f960af7b30da48acfdebac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a39f8d6de192de8cacfbb2400dcd554e = $(`<div id="html_a39f8d6de192de8cacfbb2400dcd554e" style="width: 100.0%; height: 100.0%;">Cove<br>Type: LRT<br>Nearest station: Meridian<br>Nearest distance: 0.444 km</div>`)[0];
+                popup_6a0d0cb427f960af7b30da48acfdebac.setContent(html_a39f8d6de192de8cacfbb2400dcd554e);
+            
+        
+
+        circle_marker_4e0f68ab8bf8ff0a039c50c5d5c45a25.bindPopup(popup_6a0d0cb427f960af7b30da48acfdebac)
+        ;
+
+        
+    
+    
+            var circle_marker_f6dea9267366eae3218b8eb964716ea0 = L.circleMarker(
+                [1.397002, 103.908884],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_e6078d2a6d435523268b65b24218e215 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de9e3d7d042610c2324a5f259b5a6f80 = $(`<div id="html_de9e3d7d042610c2324a5f259b5a6f80" style="width: 100.0%; height: 100.0%;">Meridian<br>Type: LRT<br>Nearest station: Cove<br>Nearest distance: 0.444 km</div>`)[0];
+                popup_e6078d2a6d435523268b65b24218e215.setContent(html_de9e3d7d042610c2324a5f259b5a6f80);
+            
+        
+
+        circle_marker_f6dea9267366eae3218b8eb964716ea0.bindPopup(popup_e6078d2a6d435523268b65b24218e215)
+        ;
+
+        
+    
+    
+            var circle_marker_4ae322db3eeae32e0646873624a8953d = L.circleMarker(
+                [1.39392, 103.912633],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_ca8072ef5a899f1cf05cbcfa7526ea4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05456e37734fa2318c23a2df9987f0ae = $(`<div id="html_05456e37734fa2318c23a2df9987f0ae" style="width: 100.0%; height: 100.0%;">Coral Edge<br>Type: LRT<br>Nearest station: Riviera<br>Nearest distance: 0.387 km</div>`)[0];
+                popup_ca8072ef5a899f1cf05cbcfa7526ea4a.setContent(html_05456e37734fa2318c23a2df9987f0ae);
+            
+        
+
+        circle_marker_4ae322db3eeae32e0646873624a8953d.bindPopup(popup_ca8072ef5a899f1cf05cbcfa7526ea4a)
+        ;
+
+        
+    
+    
+            var circle_marker_2980063a2a64612be9cee979bc012ddb = L.circleMarker(
+                [1.39454, 103.916056],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_921de0deefb57a6ef71cefd7570b794f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75fd71e2700dc6112c9b14ca5ebd59be = $(`<div id="html_75fd71e2700dc6112c9b14ca5ebd59be" style="width: 100.0%; height: 100.0%;">Riviera<br>Type: LRT<br>Nearest station: Coral Edge<br>Nearest distance: 0.387 km</div>`)[0];
+                popup_921de0deefb57a6ef71cefd7570b794f.setContent(html_75fd71e2700dc6112c9b14ca5ebd59be);
+            
+        
+
+        circle_marker_2980063a2a64612be9cee979bc012ddb.bindPopup(popup_921de0deefb57a6ef71cefd7570b794f)
+        ;
+
+        
+    
+    
+            var circle_marker_97f799efa4ffc3fab441507c06974177 = L.circleMarker(
+                [1.399633, 103.916536],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_0215737b6d08c51b894b678e1b6df0cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67590abeea525fdbf24661e96a134462 = $(`<div id="html_67590abeea525fdbf24661e96a134462" style="width: 100.0%; height: 100.0%;">Kadaloor<br>Type: LRT<br>Nearest station: Oasis<br>Nearest distance: 0.516 km</div>`)[0];
+                popup_0215737b6d08c51b894b678e1b6df0cf.setContent(html_67590abeea525fdbf24661e96a134462);
+            
+        
+
+        circle_marker_97f799efa4ffc3fab441507c06974177.bindPopup(popup_0215737b6d08c51b894b678e1b6df0cf)
+        ;
+
+        
+    
+    
+            var circle_marker_4205e533aa05d0bd4b5a0a295ae9c9e6 = L.circleMarker(
+                [1.402304, 103.912736],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_98551c2c8e8712ebebc3b21a9b172fc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2615b95fb9864f14742029a2adb0578c = $(`<div id="html_2615b95fb9864f14742029a2adb0578c" style="width: 100.0%; height: 100.0%;">Oasis<br>Type: LRT<br>Nearest station: Kadaloor<br>Nearest distance: 0.516 km</div>`)[0];
+                popup_98551c2c8e8712ebebc3b21a9b172fc7.setContent(html_2615b95fb9864f14742029a2adb0578c);
+            
+        
+
+        circle_marker_4205e533aa05d0bd4b5a0a295ae9c9e6.bindPopup(popup_98551c2c8e8712ebebc3b21a9b172fc7)
+        ;
+
+        
+    
+    
+            var circle_marker_cf9096d248b1d945fb2f4c61c8817adc = L.circleMarker(
+                [1.405293, 103.908606],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_7617d577b47990480b5fbb00958aef87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76f1d65c10939aed7f64514843882da7 = $(`<div id="html_76f1d65c10939aed7f64514843882da7" style="width: 100.0%; height: 100.0%;">Damai<br>Type: LRT<br>Nearest station: Oasis<br>Nearest distance: 0.567 km</div>`)[0];
+                popup_7617d577b47990480b5fbb00958aef87.setContent(html_76f1d65c10939aed7f64514843882da7);
+            
+        
+
+        circle_marker_cf9096d248b1d945fb2f4c61c8817adc.bindPopup(popup_7617d577b47990480b5fbb00958aef87)
+        ;
+
+        
+    
+    
+            var circle_marker_e80565420d623ef43704bccd96285aa9 = L.circleMarker(
+                [1.409808, 103.90492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_d5455657900f794a33e3f2ccfa8a83ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3e2105d9254f1689391fa578f110608 = $(`<div id="html_f3e2105d9254f1689391fa578f110608" style="width: 100.0%; height: 100.0%;">Sam Kee<br>Type: LRT<br>Nearest station: Teck Lee<br>Nearest distance: 0.378 km</div>`)[0];
+                popup_d5455657900f794a33e3f2ccfa8a83ad.setContent(html_f3e2105d9254f1689391fa578f110608);
+            
+        
+
+        circle_marker_e80565420d623ef43704bccd96285aa9.bindPopup(popup_d5455657900f794a33e3f2ccfa8a83ad)
+        ;
+
+        
+    
+    
+            var circle_marker_fd02ce01982cf2c0ac7a529eff0a9ff1 = L.circleMarker(
+                [1.412783, 103.906565],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_c4c5b0275f642d1062b832e13e63ec6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0ed4b92f7ea5f5fdb0dbe606bcaec27 = $(`<div id="html_e0ed4b92f7ea5f5fdb0dbe606bcaec27" style="width: 100.0%; height: 100.0%;">Teck Lee<br>Type: LRT<br>Nearest station: Sam Kee<br>Nearest distance: 0.378 km</div>`)[0];
+                popup_c4c5b0275f642d1062b832e13e63ec6a.setContent(html_e0ed4b92f7ea5f5fdb0dbe606bcaec27);
+            
+        
+
+        circle_marker_fd02ce01982cf2c0ac7a529eff0a9ff1.bindPopup(popup_c4c5b0275f642d1062b832e13e63ec6a)
+        ;
+
+        
+    
+    
+            var circle_marker_b40b0f5fea5e01170c7af3ac7daf1762 = L.circleMarker(
+                [1.416932, 103.90668],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_dc04356f4bc5a5367af631e823e8fb44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0375efe84dcba8839f46975894fdbfed = $(`<div id="html_0375efe84dcba8839f46975894fdbfed" style="width: 100.0%; height: 100.0%;">Punggol Point<br>Type: LRT<br>Nearest station: Teck Lee<br>Nearest distance: 0.462 km</div>`)[0];
+                popup_dc04356f4bc5a5367af631e823e8fb44.setContent(html_0375efe84dcba8839f46975894fdbfed);
+            
+        
+
+        circle_marker_b40b0f5fea5e01170c7af3ac7daf1762.bindPopup(popup_dc04356f4bc5a5367af631e823e8fb44)
+        ;
+
+        
+    
+    
+            var circle_marker_52348fc4f38d1864c64c0c175f33d36d = L.circleMarker(
+                [1.415955, 103.902185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_97bbab2eb6c93f895a5a4a1a8696cf70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4d4fcaec84c4ef08dd906653b707217 = $(`<div id="html_e4d4fcaec84c4ef08dd906653b707217" style="width: 100.0%; height: 100.0%;">Samudera<br>Type: LRT<br>Nearest station: Nibong<br>Nearest distance: 0.500 km</div>`)[0];
+                popup_97bbab2eb6c93f895a5a4a1a8696cf70.setContent(html_e4d4fcaec84c4ef08dd906653b707217);
+            
+        
+
+        circle_marker_52348fc4f38d1864c64c0c175f33d36d.bindPopup(popup_97bbab2eb6c93f895a5a4a1a8696cf70)
+        ;
+
+        
+    
+    
+            var circle_marker_360953322c5d92f4e716a356e6055cf5 = L.circleMarker(
+                [1.411865, 103.900321],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_6340b6df73fd5b24926656eb6633d1df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae7edecd3ccd9970cc45458b49bb6234 = $(`<div id="html_ae7edecd3ccd9970cc45458b49bb6234" style="width: 100.0%; height: 100.0%;">Nibong<br>Type: LRT<br>Nearest station: Sumang<br>Nearest distance: 0.420 km</div>`)[0];
+                popup_6340b6df73fd5b24926656eb6633d1df.setContent(html_ae7edecd3ccd9970cc45458b49bb6234);
+            
+        
+
+        circle_marker_360953322c5d92f4e716a356e6055cf5.bindPopup(popup_6340b6df73fd5b24926656eb6633d1df)
+        ;
+
+        
+    
+    
+            var circle_marker_1e5b04aca9bea03dac1a9d248c9cee70 = L.circleMarker(
+                [1.408501, 103.898605],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_a678a6c7945fb10afaa57d4fb52d22f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9fcabf5c09fb1f51084234a47494a1b = $(`<div id="html_d9fcabf5c09fb1f51084234a47494a1b" style="width: 100.0%; height: 100.0%;">Sumang<br>Type: LRT<br>Nearest station: Soo Teck<br>Nearest distance: 0.371 km</div>`)[0];
+                popup_a678a6c7945fb10afaa57d4fb52d22f0.setContent(html_d9fcabf5c09fb1f51084234a47494a1b);
+            
+        
+
+        circle_marker_1e5b04aca9bea03dac1a9d248c9cee70.bindPopup(popup_a678a6c7945fb10afaa57d4fb52d22f0)
+        ;
+
+        
+    
+    
+            var circle_marker_db1ff12e19b4f2a55a35fbbca2d3f453 = L.circleMarker(
+                [1.405436, 103.897287],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5b1221c5393be71048d761bca6991032);
+        
+    
+        var popup_f788bf51c06d7f24e1c36d296276633f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ba9b336a9018de7c15b0ade750c66b7 = $(`<div id="html_0ba9b336a9018de7c15b0ade750c66b7" style="width: 100.0%; height: 100.0%;">Soo Teck<br>Type: LRT<br>Nearest station: Sumang<br>Nearest distance: 0.371 km</div>`)[0];
+                popup_f788bf51c06d7f24e1c36d296276633f.setContent(html_0ba9b336a9018de7c15b0ade750c66b7);
+            
+        
+
+        circle_marker_db1ff12e19b4f2a55a35fbbca2d3f453.bindPopup(popup_f788bf51c06d7f24e1c36d296276633f)
+        ;
+
+        
+    
+    
+            marker_cluster_5b1221c5393be71048d761bca6991032.addTo(map_18126d33ec76d6ca03d59c1b4caab02e);
+        
+</script>
+</html>
